@@ -1,0 +1,27 @@
+.attt{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.one{
+    color: tomato;
+    font-weight: bold;
+}
+
+.red{
+    color: lightcoral;
+    font-weight: bold;
+}
+
+.heading{
+    color: blueviolet;
+}
+
+.sshh2{
+    display: none;
+}
+
+.tab{
+    width: 100%;
+    float: left;
+}
