@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Register</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-primary">
+
+    <div class="container">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+                    <div class="col-lg-7">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">BUY A POLOCY!</h1>
+                            </div>
+                            <form class="user" th:action="@{/buyMobilePolicy}" th:object="${mobilePolicy}" method="post">
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                            placeholder="First Name" th:field=*{firstName}>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
+                                            placeholder="Last Name" th:field=*{lastName}>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="Email Address" th:field=*{email}>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleInputPassword" placeholder="Password" th:field=*{password}>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleRepeatPassword" placeholder="Repeat Password">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                                    </div>
+                                    <select class="custom-select" style="max-width: 120px;">
+                                        <option selected="">+971</option>
+                                        <option value="1">+972</option>
+                                        <option value="2">+198</option>
+                                        <option value="3">+701</option>
+                                    </select>
+                                    <input name="" class="form-control" placeholder="Phone number" type="text" th:field=*{phoneNumber}>
+                                </div> <!-- form-group// -->
+
+                                <div class="form-group">
+                                    <select class="form-control" th:field=*{plan}>
+                                        <option value="" class="hidden"  selected disabled>Please Choose your plan</option>
+                                        <option value="bike">bike insurance plan</option>
+                                        <option value="arogya">arogya insurance plan</option>
+                                        <option value="jeevan">jeevan jyothi plan</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                      <label>City</label>
+                                      <input type="text" class="form-control" th:field=*{city}>
+                                    </div> <!-- form-group end.// -->
+                                    <div class="form-group col-md-6">
+                                      <label>Country</label>
+                                      <select id="inputState" class="form-control" th:field=*{country}>
+                                        <option value=""> Choose...</option>
+                                          <option value="Uzbekistan">Uzbekistan</option>
+                                          <option value="Russia">Russia</option>
+                                          <option value="United States">United States</option>
+                                          <option value="India">India</option>
+                                          <option value="Afganistan">Afganistan</option>
+                                      </select>
+                                    </div> <!-- form-group end.// -->
+                                </div> <!-- form-row.// -->
+
+                                <div class="form-group">
+                                    <label for="birthDate" class="col-sm-3 control-label">Date of Birth*</label>
+                                    <div class="col-sm-9">
+                                        <input type="date" id="birthDate" class="form-control" th:field=*{dob}>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="maxl">
+                                        <label class="radio inline"> 
+                                            <input type="radio" name="gender" value="male" checked th:field=*{gender}>
+                                            <span> Male </span> 
+                                        </label>
+                                        <label class="radio inline"> 
+                                            <input type="radio" name="gender" value="female" th:field=*{gender}>
+                                            <span>Female </span> 
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                                    </div>
+                                    <select class="form-control" th:field=*{jobType}>
+                                        <option selected="" value=""> Select job type</option>
+                                        <option value="Designer">Designer</option>
+                                        <option value="Manager">Manager</option>
+                                        <option value="Accaunting">Accaunting</option>
+                                    </select>
+                                </div> <!-- form-group end.// -->
+                                <!-- <div class="form-group">
+                                    <label class="control-label col-sm-3">Gender</label>
+                                    <div class="col-sm-6">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <label class="radio-inline">
+                                                    <input type="radio" id="femaleRadio" value="Female">Female
+                                                </label>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label class="radio-inline">
+                                                    <input type="radio" id="maleRadio" value="Male">Male
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  -->
+                                <div class="form-group">
+                                    <div class="col-sm-9 col-sm-offset-3">
+                                        <span class="help-block">*Required fields</span>
+                                    </div>
+                                </div>
+
+
+                                <input type="submit" class="btn" value="submit" />
+                                <hr>
+                                <!-- <a href="index.html" class="btn btn-google btn-user btn-block">
+                                    <i class="fab fa-google fa-fw"></i> Register with Google
+                                </a>
+                                <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                                    <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
+                                </a> -->
+                            </form>
+                            <hr>
+                            <div class="text-center">
+                                <a class="small" href="forgot-password.html">see your plan!.. </a>
+                            </div>
+                            <div class="text-center">
+                                <a class="small" href="login.html">Already have an account?  Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="assets/js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>

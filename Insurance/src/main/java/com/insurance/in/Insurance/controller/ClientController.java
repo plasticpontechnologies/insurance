@@ -41,7 +41,7 @@ public class ClientController {
 		ModelAndView mobileView = new ModelAndView();
 		BuyPolicy mobilePolicy = new BuyPolicy();
 		mobileView.addObject("mobilePolicy", mobilePolicy);
-		mobileView.setViewName("car_reg");
+		mobileView.setViewName("mobile_reg");
 		return mobileView;
 	}
 	@RequestMapping("/getGoldView")
@@ -49,7 +49,7 @@ public class ClientController {
 		ModelAndView goldView = new ModelAndView();
 		BuyPolicy goldPolicy = new BuyPolicy();
 		goldView.addObject("goldPolicy", goldPolicy);
-		goldView.setViewName("car_reg");
+		goldView.setViewName("gold_reg");
 		return goldView;
 	}
 	
@@ -91,4 +91,38 @@ public class ClientController {
 		}		
 		return buyPolicy;
 	}
+	
+	@RequestMapping(value = "/buyMobilePolicy",method = RequestMethod.POST)
+	public ModelAndView buyMobilePolicy(@ModelAttribute("mobilePolicy") BuyPolicy mobilePolicy,Principal principal) {
+		ModelAndView buyPolicy = new ModelAndView();
+		String name = principal.getName();
+		mobilePolicy.setUserId(name);
+		mobilePolicy.setPolicycategory("General");
+		mobilePolicy.setPolicytype("Mobile");
+		int savedRows = clientService.buyPolicy(mobilePolicy);
+		if(savedRows > 0) {
+			buyPolicy.setViewName("success");
+		}else {
+			buyPolicy.setViewName("success");	
+		}		
+		return buyPolicy;
+	}
+	
+	@RequestMapping(value = "/buyGoldPolicy",method = RequestMethod.POST)
+	public ModelAndView buyGoldPolicy(@ModelAttribute("goldPolicy") BuyPolicy goldPolicy,Principal principal) {
+		ModelAndView buyPolicy = new ModelAndView();
+		String name = principal.getName();
+		goldPolicy.setUserId(name);
+		goldPolicy.setPolicycategory("General");
+		goldPolicy.setPolicytype("Gold");
+		int savedRows = clientService.buyPolicy(goldPolicy);
+		if(savedRows > 0) {
+			buyPolicy.setViewName("success");
+		}else {
+			buyPolicy.setViewName("success");	
+		}		
+		return buyPolicy;
+	}
+
+
 }
