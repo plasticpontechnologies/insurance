@@ -68,17 +68,9 @@ public class ClientController
 	}
 	
 	@RequestMapping("/health")
-	public ModelAndView getHealthView() 
-	{
+	public ModelAndView getHealthView() {
 		ModelAndView generalView = new ModelAndView();
 		generalView.setViewName("health");
-		return generalView;
-	}
-	@RequestMapping("/life")
-	public ModelAndView getLifeView() 
-	{
-		ModelAndView generalView = new ModelAndView();
-		generalView.setViewName("life");
 		return generalView;
 	}
 	
@@ -122,22 +114,6 @@ public class ClientController
 		return buyPolicy;
 	}
 	
-	@RequestMapping(value = "/buyMobilePolicy",method = RequestMethod.POST)
-	public ModelAndView buyMobilePolicy(@ModelAttribute("mobilePolicy") BuyPolicy mobilePolicy,Principal principal) {
-		ModelAndView buyPolicy = new ModelAndView();
-		String name = principal.getName();
-		mobilePolicy.setUserId(name);
-		mobilePolicy.setPolicycategory("General");
-		mobilePolicy.setPolicytype("Mobile");
-		int savedRows = clientService.buyPolicy(mobilePolicy);
-		if(savedRows > 0) {
-			buyPolicy.setViewName("success");
-		}else {
-			buyPolicy.setViewName("success");	
-		}		
-		return buyPolicy;
-	}
-	
 	@RequestMapping(value = "/buyGoldPolicy",method = RequestMethod.POST)
 	public ModelAndView buyGoldPolicy(@ModelAttribute("goldPolicy") BuyPolicy goldPolicy,Principal principal) {
 		ModelAndView buyPolicy = new ModelAndView();
@@ -146,6 +122,22 @@ public class ClientController
 		goldPolicy.setPolicycategory("General");
 		goldPolicy.setPolicytype("Gold");
 		int savedRows = clientService.buyPolicy(goldPolicy);
+		if(savedRows > 0) {
+			buyPolicy.setViewName("success");
+		}else {
+			buyPolicy.setViewName("success");	
+		}		
+		return buyPolicy;
+	}
+	
+	@RequestMapping(value = "/buyMobilePolicy",method = RequestMethod.POST)
+	public ModelAndView buyMobilePolicy(@ModelAttribute("mobilePolicy") BuyPolicy mobilePolicy,Principal principal) {
+		ModelAndView buyPolicy = new ModelAndView();
+		String name = principal.getName();
+		mobilePolicy.setUserId(name);
+		mobilePolicy.setPolicycategory("General");
+		mobilePolicy.setPolicytype("Mobile");
+		int savedRows = clientService.buyPolicy(mobilePolicy);
 		if(savedRows > 0) {
 			buyPolicy.setViewName("success");
 		}else {
