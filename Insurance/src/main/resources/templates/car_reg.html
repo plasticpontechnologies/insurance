@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
 
 <head>
 
@@ -36,25 +37,25 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">BUY A POLOCY!</h1>
                             </div>
-                            <form class="user">
+                            <form class="user" th:action="@{/buyCarPolicy}" th:object="${carPolicy}" method="post">
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                            placeholder="First Name">
+                                            placeholder="First Name" th:field=*{firstName}>
                                     </div>
                                     <div class="col-sm-6">
                                         <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                            placeholder="Last Name">
+                                            placeholder="Last Name" th:field=*{lastName}>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="Email Address">
+                                        placeholder="Email Address" th:field=*{email}>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="password" class="form-control form-control-user"
-                                            id="exampleInputPassword" placeholder="Password">
+                                            id="exampleInputPassword" placeholder="Password" th:field=*{password}>
                                     </div>
                                     <div class="col-sm-6">
                                         <input type="password" class="form-control form-control-user"
@@ -73,32 +74,32 @@
                                         <option value="2">+198</option>
                                         <option value="3">+701</option>
                                     </select>
-                                    <input name="" class="form-control" placeholder="Phone number" type="text">
+                                    <input name="" class="form-control" placeholder="Phone number" type="text" th:field=*{phoneNumber}>
                                 </div> <!-- form-group// -->
 
                                 <div class="form-group">
-                                    <select class="form-control">
-                                        <option class="hidden"  selected disabled>Please Choose your plan</option>
-                                        <option>bike insurance plan</option>
-                                        <option>arogya insurance plan</option>
-                                        <option>jeevan jyothi plan</option>
+                                    <select class="form-control" th:field=*{plan}>
+                                        <option value="" class="hidden"  selected disabled>Please Choose your plan</option>
+                                        <option value="bike">bike insurance plan</option>
+                                        <option value="arogya">arogya insurance plan</option>
+                                        <option value="jeevan">jeevan jyothi plan</option>
                                     </select>
                                 </div>
 
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                       <label>City</label>
-                                      <input type="text" class="form-control">
+                                      <input type="text" class="form-control" th:field=*{city}>
                                     </div> <!-- form-group end.// -->
                                     <div class="form-group col-md-6">
                                       <label>Country</label>
-                                      <select id="inputState" class="form-control">
-                                        <option> Choose...</option>
-                                          <option>Uzbekistan</option>
-                                          <option>Russia</option>
-                                          <option selected="">United States</option>
-                                          <option>India</option>
-                                          <option>Afganistan</option>
+                                      <select id="inputState" class="form-control" th:field=*{country}>
+                                        <option value=""> Choose...</option>
+                                          <option value="Uzbekistan">Uzbekistan</option>
+                                          <option value="Russia">Russia</option>
+                                          <option value="United States">United States</option>
+                                          <option value="India">India</option>
+                                          <option value="Afganistan">Afganistan</option>
                                       </select>
                                     </div> <!-- form-group end.// -->
                                 </div> <!-- form-row.// -->
@@ -106,18 +107,18 @@
                                 <div class="form-group">
                                     <label for="birthDate" class="col-sm-3 control-label">Date of Birth*</label>
                                     <div class="col-sm-9">
-                                        <input type="date" id="birthDate" class="form-control">
+                                        <input type="date" id="birthDate" class="form-control" th:field=*{dob}>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <div class="maxl">
                                         <label class="radio inline"> 
-                                            <input type="radio" name="gender" value="male" checked>
+                                            <input type="radio" name="gender" value="male" checked th:field=*{gender}>
                                             <span> Male </span> 
                                         </label>
                                         <label class="radio inline"> 
-                                            <input type="radio" name="gender" value="female">
+                                            <input type="radio" name="gender" value="female" th:field=*{gender}>
                                             <span>Female </span> 
                                         </label>
                                     </div>
@@ -127,11 +128,11 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"> <i class="fa fa-building"></i> </span>
                                     </div>
-                                    <select class="form-control">
-                                        <option selected=""> Select job type</option>
-                                        <option>Designer</option>
-                                        <option>Manager</option>
-                                        <option>Accaunting</option>
+                                    <select class="form-control" th:field=*{jobType}>
+                                        <option selected="" value=""> Select job type</option>
+                                        <option value="Designer">Designer</option>
+                                        <option value="Manager">Manager</option>
+                                        <option value="Accaunting">Accaunting</option>
                                     </select>
                                 </div> <!-- form-group end.// -->
                                 <!-- <div class="form-group">
@@ -158,9 +159,7 @@
                                 </div>
 
 
-                                <a href="login.html" class="btn btn-primary btn-user btn-block">
-                                   submit
-                                </a>
+                                <input type="submit" class="btn" value="submit" />
                                 <hr>
                                 <!-- <a href="index.html" class="btn btn-google btn-user btn-block">
                                     <i class="fab fa-google fa-fw"></i> Register with Google
