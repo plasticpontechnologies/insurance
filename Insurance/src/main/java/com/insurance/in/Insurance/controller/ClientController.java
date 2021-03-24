@@ -67,6 +67,13 @@ public class ClientController
 		return generalView;
 	}
 	
+	@RequestMapping("/health")
+	public ModelAndView getHealthView() 
+	{
+		ModelAndView generalView = new ModelAndView();
+		generalView.setViewName("health");
+		return generalView;
+	}
 	@RequestMapping("/life")
 	public ModelAndView getLifeView() 
 	{

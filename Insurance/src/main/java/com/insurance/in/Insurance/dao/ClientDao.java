@@ -28,7 +28,7 @@ public class ClientDao extends JdbcDaoSupport{
 	
 	public List<DocumentRequest> getAllDocumentData(){
 		
-		String sql = "select * from documentRequest";
+		String sql = "select * from documentRequests";
 		
 		List<DocumentRequest> documentList = this.getJdbcTemplate().query(sql, 
 				BeanPropertyRowMapper.newInstance(DocumentRequest.class));
