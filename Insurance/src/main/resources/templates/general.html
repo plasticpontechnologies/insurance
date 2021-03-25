@@ -401,7 +401,7 @@ xmlns:th="http://www.thymeleaf.org">
                         
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-primary shadow h-100 py-2">
-                                <a href="general.html" class="cont1">
+                                <a th:href="@{/general}">
                                     <div class="card-body">
                                         <div class="row no-gutters align-items-center">
                                             <div class="col mr-2">
@@ -422,7 +422,7 @@ xmlns:th="http://www.thymeleaf.org">
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-success shadow h-100 py-2">
-                                <a href="health.html" class="cont2"><div class="card-body">
+                                 <a th:href="@{/health}"><div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
@@ -441,7 +441,7 @@ xmlns:th="http://www.thymeleaf.org">
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-info shadow h-100 py-2">
-                                <a href="life.html" class="cont3"><div class="card-body">
+                               <a th:href="@{/life}"><div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Life Policies
@@ -471,7 +471,7 @@ xmlns:th="http://www.thymeleaf.org">
                         <!-- Pending Requests Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4"     >
                             <div class="card border-left-warning shadow h-100 py-2">
-                                <a href="document.html" class="cont4"><div class="card-body">
+                                 <a th:href="@{/documentRequests}"><div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1"  action="#"  th:action="@{/document-requests}" method="post" >

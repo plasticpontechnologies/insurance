@@ -74,6 +74,13 @@ public class ClientController
 		return generalView;
 	}
 	
+	@RequestMapping("/life")
+	public ModelAndView getLifeView() {
+		ModelAndView generalView = new ModelAndView();
+		generalView.setViewName("life");
+		return generalView;
+	}
+	
 	@RequestMapping(value = "/buyPolicy",method = RequestMethod.POST)
 	public ModelAndView buyPolicy(@ModelAttribute("bikePolicy") BuyPolicy bikePolicy,Principal principal) 
 	{

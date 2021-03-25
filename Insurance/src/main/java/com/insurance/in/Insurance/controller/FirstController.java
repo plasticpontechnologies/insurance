@@ -65,9 +65,10 @@ public class FirstController {
 		System.out.println("inside getDocumentRequestData()");
 		//loginSuccess.setViewName("userInfoPage");client_dashboard
 		List<DocumentRequest> documentList=userService.getAllDocumentData();
-		for(DocumentRequest document : documentList) {
-			System.out.println(document.getName());
-		}
+		/*
+		 * for(DocumentRequest document : documentList) {
+		 * System.out.println(document.getName()); }
+		 */
 		documentRequest.addObject("documentList", documentList);
 		documentRequest.setViewName("document");
 		return documentRequest;
