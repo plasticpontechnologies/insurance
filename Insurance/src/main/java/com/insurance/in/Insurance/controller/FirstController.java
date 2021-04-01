@@ -1,5 +1,6 @@
 package com.insurance.in.Insurance.controller;
 
+import java.security.Principal;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ import com.insurance.in.Insurance.model.DocumentRequest;
 import com.insurance.in.Insurance.model.LoginUser;
 import com.insurance.in.Insurance.model.User;
 import com.insurance.in.Insurance.service.UserService;
+import com.insurance.in.Insurance.utils.Constants;
 
 @Controller
 public class FirstController {
@@ -139,10 +141,18 @@ public class FirstController {
 	}
 
 	@RequestMapping(value = "/loginSuccess")
-	public ModelAndView loginSuccess() {
+	public ModelAndView loginSuccess(Principal principal) {
 		ModelAndView loginSuccess = new ModelAndView();
-		// loginSuccess.setViewName("userInfoPage");client_dashboard
-		loginSuccess.setViewName("dashboard_main");
+		//loginSuccess.setViewName("userInfoPage");client_dashboard
+		//
+		System.out.println(principal.getName());
+		String roleName = userService.getRoleByName(principal.getName());
+		if(roleName.equalsIgnoreCase(Constants.role_user)) {
+			loginSuccess.setViewName("dashboard_main");
+		}else if(roleName.equalsIgnoreCase(Constants.role_admin)) {
+			loginSuccess.setViewName("AgentDashBoard");	
+		}
+		
 		return loginSuccess;
 	}
 

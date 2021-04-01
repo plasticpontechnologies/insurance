@@ -34,4 +34,11 @@ public class AppUserDAO extends JdbcDaoSupport{
             return null;
         }
     }
+	
+	public String findRoleByName(String name) {
+		String sql = "select ar.role_name from app_role ar join user_role ur on ar.role_id = ur.ROLE_ID join app_user au on au.user_id = ur.USER_ID where au.USER_NAME= ? ";
+		Object[] params = new Object[] { name };
+		String roleName = this.getJdbcTemplate().queryForObject(sql, params, String.class);
+		return roleName;
+	}
 }

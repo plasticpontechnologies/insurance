@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.insurance.in.Insurance.dao.AppUserDAO;
 import com.insurance.in.Insurance.dao.ClientDao;
 import com.insurance.in.Insurance.model.DocumentRequest;
 import com.insurance.in.Insurance.model.User;
@@ -19,6 +20,9 @@ public class UserService {
 	
 	@Autowired
 	private ClientDao clientDao;
+	
+	@Autowired
+	private AppUserDAO appUserDao;
 	
 	int savedUniqueId = 0;
 	
@@ -57,6 +61,11 @@ public class UserService {
 	public List<DocumentRequest> getAllDocumentData(){
 		List<DocumentRequest> documentList = clientDao.getAllDocumentData();
 		return documentList;
+	}
+	
+	public String getRoleByName(String name) {
+		String roleName = appUserDao.findRoleByName(name);
+		return roleName;
 	}
 	
 }
