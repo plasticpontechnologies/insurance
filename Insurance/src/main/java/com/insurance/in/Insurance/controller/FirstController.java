@@ -22,11 +22,17 @@ public class FirstController {
 	@Autowired
 	private UserService userService;
 
-	
-	  @RequestMapping("/") public ModelAndView firstUrl() { ModelAndView first =
-	  new ModelAndView("index-3"); //first.addObject("loginUser", new LoginUser());
-	  return first; }
-	 
+	@RequestMapping("/")
+	public ModelAndView firstUrl() {
+		ModelAndView first = new ModelAndView("index-3"); // first.addObject("loginUser", new LoginUser());
+		return first;
+	}
+
+	@RequestMapping("/Home")
+	public ModelAndView Home() {
+		ModelAndView first = new ModelAndView("index-3"); // first.addObject("loginUser", new LoginUser());
+		return first;
+	}
 
 	@RequestMapping("/signup")
 	public ModelAndView viewRegisterPage() {
@@ -38,10 +44,91 @@ public class FirstController {
 	@RequestMapping("/login")
 	public ModelAndView viewLoginPage() {
 		ModelAndView signUp = new ModelAndView("sign_in");
-		//signUp.addObject("user", new User());
+		// signUp.addObject("user", new User());
 		return signUp;
 	}
 
+	@RequestMapping("/login1")
+	public ModelAndView viewLoginPage1() {
+		ModelAndView signUp = new ModelAndView("sign_in");
+		
+		return signUp;
+	}
+
+	@RequestMapping("/about-us")
+	public ModelAndView viewaboutUs() {
+		ModelAndView signUp = new ModelAndView("about-us");
+		
+		return signUp;
+	}
+
+	@RequestMapping("/contact-us")
+	public ModelAndView viewContactUs() {
+		ModelAndView signUp = new ModelAndView("contact-us");
+		
+		return signUp;
+	}
+	
+	@RequestMapping("/blog-column-one")
+	public ModelAndView viewUs() {
+		ModelAndView signUp = new ModelAndView("blog-column-one");
+		
+		return signUp;
+	}
+	
+	@RequestMapping("/blog-column-two")
+	public ModelAndView viewBlogTwo() {
+		ModelAndView signUp = new ModelAndView("blog-column-two");
+		
+		return signUp;
+	}
+	
+	@RequestMapping("/blog-column-three")
+	public ModelAndView viewBlogThree() {
+		ModelAndView signUp = new ModelAndView("blog-column-three");
+		
+		return signUp;
+	}
+	@RequestMapping("/blog-left-sidebar")
+	public ModelAndView viewBlogLeftSideBar() {
+		ModelAndView signUp = new ModelAndView("blog-left-sidebar");
+		
+		return signUp;
+	}
+	@RequestMapping("/life-insurance")
+	public ModelAndView viewBussinessInsurance() {
+		ModelAndView signUp = new ModelAndView("life-insurance");
+		
+		return signUp;
+	}
+	
+	@RequestMapping("/health-insurance")
+	public ModelAndView viewHealthInsurance() {
+		ModelAndView signUp = new ModelAndView("health-insurance");
+		
+		return signUp;
+	}
+	
+	@RequestMapping("/car-insurance")
+	public ModelAndView viewLifeInsurance() {
+		ModelAndView signUp = new ModelAndView("car-insurance");
+		
+		return signUp;
+	}
+	
+	@RequestMapping("/becomeinsurance")
+	public ModelAndView viewBecomeInsurance() {
+		ModelAndView signUp = new ModelAndView("become-insurance");
+		
+		return signUp;
+	}
+	
+	@RequestMapping("/inverst")
+	public ModelAndView viewInvesting() {
+		ModelAndView signUp = new ModelAndView("inverst");
+		
+		return signUp;
+	}
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
 	public ModelAndView registerUser(@ModelAttribute("user") User user) {
 		// model.addAttribute("login", new Login());
@@ -50,21 +137,21 @@ public class FirstController {
 		registerView.setViewName("success");
 		return registerView;
 	}
-	
-	@RequestMapping(value="/loginSuccess")
+
+	@RequestMapping(value = "/loginSuccess")
 	public ModelAndView loginSuccess() {
 		ModelAndView loginSuccess = new ModelAndView();
-		//loginSuccess.setViewName("userInfoPage");client_dashboard
+		// loginSuccess.setViewName("userInfoPage");client_dashboard
 		loginSuccess.setViewName("dashboard_main");
 		return loginSuccess;
 	}
-	
-	@RequestMapping(value="/documentRequests")
+
+	@RequestMapping(value = "/documentRequests")
 	public ModelAndView getDocumentRequestData() {
 		ModelAndView documentRequest = new ModelAndView();
 		System.out.println("inside getDocumentRequestData()");
-		//loginSuccess.setViewName("userInfoPage");client_dashboard
-		List<DocumentRequest> documentList=userService.getAllDocumentData();
+		// loginSuccess.setViewName("userInfoPage");client_dashboard
+		List<DocumentRequest> documentList = userService.getAllDocumentData();
 		/*
 		 * for(DocumentRequest document : documentList) {
 		 * System.out.println(document.getName()); }

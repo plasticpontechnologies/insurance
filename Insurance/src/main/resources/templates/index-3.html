@@ -1,13 +1,14 @@
 <!doctype html>
 <!-- <html lang="zxx"> -->
-    <html xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
 
 <!-- Mirrored from templates.envytheme.com/perry/default/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Mar 2021 03:36:59 GMT -->
 <head>
 
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
@@ -40,18 +41,18 @@
 </head>
 <body>
 
-<div class="preloader">
-<div class="lds-ripple">
-<div></div>
-<div></div>
-</div>
-</div>
+	<div class="preloader">
+		<div class="lds-ripple">
+			<div></div>
+			<div></div>
+		</div>
+	</div>
 
 
 
-<header class="header-area">
+	<header class="header-area">
 
-    <!-- <div class="top-header">
+		<!-- <div class="top-header">
     <div class="container-fluid">
     <div class="row align-items-center">
     <div class="col-lg-8 col-md-7">
@@ -108,7 +109,7 @@
     </ul>
     </li>
     </ul>-->
-    <!-- <div class="log-in">
+		<!-- <div class="log-in">
     <a href="#" data-toggle="modal"  data-target="#staticBackdrop">
     Log In
     </a>
@@ -118,40 +119,39 @@
     Register
     </a>
     </div>  -->
-    <!-- </div>
+		<!-- </div>
     </div>
     </div>
     </div>
     </div>  -->
-    
-    
-    <div class="navbar-area">
-    <div class="mobile-nav">
-    <div class="container-fluid">
-    <div class="mobile-menu">
-    <div class="logo">
-    <a href="index-2.html">
-    <img src="https://www.logolynx.com/images/logolynx/15/15d22fb10e0ed1be449a970551a0f434.jpeg" style="width: 50px; height: 50px;" alt="logo">
-    </a>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="desktop-nav"   action="#" th:action="@{/save}" th:object="${loginpage}" method="post">
-    <div class="container-fluid">
-    <nav class="navbar navbar-expand-md navbar-light">
-    <a class="navbar-brand" href="index-2.html">
-    <img src="https://www.logolynx.com/images/logolynx/15/15d22fb10e0ed1be449a970551a0f434.jpeg" style="height:50px ;" alt="logo">
-    </a>
-    <div class="collapse navbar-collapse mean-menu">
-    <ul class="navbar-nav m-auto">
-    <li class="nav-item">
-    <a href="index-3.html" class="nav-link active">
-    Home
-    <!-- <i class="bx bx-chevron-down"></i> -->
-    </a>
-    
-    <!-- <ul class="dropdown-menu">
+
+
+		<div class="navbar-area">
+			<div class="mobile-nav">
+				<div class="container-fluid">
+					<div class="mobile-menu">
+						<div class="logo">
+							<a href="index-2.html"> <img
+								src="https://www.logolynx.com/images/logolynx/15/15d22fb10e0ed1be449a970551a0f434.jpeg"
+								style="width: 50px; height: 50px;" alt="logo">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="desktop-nav" action="#" th:action="@{/save}"
+				th:object="${loginpage}" method="post">
+				<div class="container-fluid">
+					<nav class="navbar navbar-expand-md navbar-light">
+						<a class="navbar-brand" href="index-2.html"> <img
+							src="https://www.logolynx.com/images/logolynx/15/15d22fb10e0ed1be449a970551a0f434.jpeg"
+							style="height: 50px;" alt="logo">
+						</a>
+						<div class="collapse navbar-collapse mean-menu">
+							<ul class="navbar-nav m-auto">
+								<li class="nav-item"><a th:href="@{/Home}"
+									class="nav-link active"> Home <!-- <i class="bx bx-chevron-down"></i> -->
+								</a> <!-- <ul class="dropdown-menu">
     <li class="nav-item">
     <a href="index-2.html" class="nav-link">Home One</a>
     </li>
@@ -161,245 +161,193 @@
     <li class="nav-item">
     <a href="index-4.html" class="nav-link">Home Three</a>
     </li>
-    </ul> -->
-    </li>
-    <li class="nav-item">
-        <a href="about-us.html" class="nav-link">About Us</a>
-        </li>
-        
-    
-    <li class="nav-item">
-        
-    <a href="#" class="nav-link">
-        Become insurance Advisor
-    <i class="bx bx-chevron-down"></i>
-    </a>
-    <ul class="dropdown-menu">
-     
-    <!-- <li class="nav-item">
+    </ul> --></li>
+								<li class="nav-item"><a th:href="@{/about-us}"
+									class="nav-link">About Us</a></li>
+
+
+								<li class="nav-item"><a href="#" class="nav-link">
+										Become insurance Advisor <i class="bx bx-chevron-down"></i>
+								</a>
+									<ul class="dropdown-menu">
+
+										<!-- <li class="nav-item">
     <a href="testimonials.html" class="nav-link">Testimonials</a>
     </li> -->
-    <li class="nav-item">
-    <a href="#" class="nav-link">
-    Become insurance Advisor
-    <i class="bx bx-chevron-right"></i>
-    </a>
-    <ul class="dropdown-menu">
-    <li class="nav-item">
-    <a href="#" class="nav-link">How to become an insurance advisor</a>
-    </li>
-    <li class="nav-item">
-    <a href="#" class="nav-link">insurance advisor certification course</a>
-    </li>
-    <li class="nav-item">
-        <a href="#" class="nav-link">insurance advisor Exam</a>
-    </li>
-    <li class="nav-item">
-        <a href="#" class="nav-link">Know about selling insurance</a>
-    </li>
-        
-        
-    </ul>
-    </li>
-    <!-- <li class="nav-item">
+										<li class="nav-item"><a th:href="@{/becomeinsurance}"
+											class="nav-link"> Become insurance Advisor <i
+												class="bx bx-chevron-right"></i>
+										</a>
+											<ul class="dropdown-menu">
+												<li class="nav-item"><a href="#" class="nav-link">How
+														to become an insurance advisor</a></li>
+												<li class="nav-item"><a href="#" class="nav-link">insurance
+														advisor certification course</a></li>
+												<li class="nav-item"><a href="#" class="nav-link">insurance
+														advisor Exam</a></li>
+												<li class="nav-item"><a href="#" class="nav-link">Know
+														about selling insurance</a></li>
+
+
+											</ul></li>
+										<!-- <li class="nav-item">
     <a href="team.html" class="nav-link">Team</a>
     </li> -->
-     <li class="nav-item">
-    <a href="#" class="nav-link">
-    By Insurer
-    <i class="bx bx-chevron-right"></i>
-    </a>
-    
-    <ul class="dropdown-menu">
-    <li class="nav-item">
-    <a href="#" class="nav-link">LIC
-        <i class="bx bx-chevron-right"></i>
-    </a>
-    
-    <ul class="dropdown-menu">
-        <li class="nav-item">
-        <a href="#" class="nav-link">How to become an LIC advisor</a>
-        </li>
-        <li class="nav-item">
-        <a href="#" class="nav-link">LIC mock test</a>
-        </li>
-        <li class="nav-item">
-        <a href="#" class="nav-link">LIC advisor training</a>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link">Bajaj Allianz</a>
-            </li>
-            <li class="nav-item">
-            <a href="#" class="nav-link">ICIC</a>
-            </li>
-            
-        <!-- <li class="nav-item">
+										<li class="nav-item"><a href="#" class="nav-link"> By
+												Insurer <i class="bx bx-chevron-right"></i>
+										</a>
+
+											<ul class="dropdown-menu">
+												<li class="nav-item"><a href="#" class="nav-link">LIC
+														<i class="bx bx-chevron-right"></i>
+												</a>
+
+													<ul class="dropdown-menu">
+														<li class="nav-item"><a href="#" class="nav-link">How
+																to become an LIC advisor</a></li>
+														<li class="nav-item"><a href="#" class="nav-link">LIC
+																mock test</a></li>
+														<li class="nav-item"><a href="#" class="nav-link">LIC
+																advisor training</a></li>
+														<li class="nav-item"><a href="#" class="nav-link">Bajaj
+																Allianz</a></li>
+														<li class="nav-item"><a href="#" class="nav-link">ICIC</a>
+														</li>
+
+														<!-- <li class="nav-item">
         <a href="recover-password.html" class="nav-link">Recover Password</a>
         </li> -->
-        </ul>
-    </li>
-    <li class="nav-item">
-    <a href="#" class="nav-link">Bajaj Allianz</a>
-    </li>
-    <li class="nav-item">
-    <a href="#" class="nav-link">ICIC</a>
-    </li>
-    <!-- <li class="nav-item">
+													</ul></li>
+												<li class="nav-item"><a href="#" class="nav-link">Bajaj
+														Allianz</a></li>
+												<li class="nav-item"><a href="#" class="nav-link">ICIC</a>
+												</li>
+												<!-- <li class="nav-item">
     <a href="recover-password.html" class="nav-link">Recover Password</a>
     </li> -->
-    </ul>
-    </li> 
-    <!-- <li class="nav-item">
+											</ul></li>
+										<!-- <li class="nav-item">
     <a href="pricing.html" class="nav-link">Pricing</a>
     </li> -->
-    <!-- <li class="nav-item">
+										<!-- <li class="nav-item">
     <a href="claims.html" class="nav-link">Claims</a>
     </li> -->
-    <!-- <li class="nav-item">
+										<!-- <li class="nav-item">
     <a href="faq.html" class="nav-link">FAQ</a>
     </li> -->
-    <!-- <li class="nav-item">
+										<!-- <li class="nav-item">
     <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
     </li> -->
-    <!-- <li class="nav-item">
+										<!-- <li class="nav-item">
     <a href="terms-conditions.html" class="nav-link">Terms & Conditions</a>
     </li> -->
-    <!-- <li class="nav-item">
+										<!-- <li class="nav-item">
     <a href="coming-soon.html" class="nav-link">Coming Soon</a>
     </li> -->
-    <!-- <li class="nav-item">
+										<!-- <li class="nav-item">
     <a href="404.html" class="nav-link">404 Error Page</a>
     </li> -->
-    <li class="nav-item">
-        <a href="#" class="nav-link">
-        Investing
-        <i class="bx bx-chevron-right"></i>
-        </a>
-        <ul class="dropdown-menu">
-        <li class="nav-item">
-        <a href="#" class="nav-link">Personal
-            <i class="bx bx-chevron-right"></i>
-        </a>
-        
-    
-    <ul class="dropdown-menu">
-        <li class="nav-item">
-        <a href="#" class="nav-link">Mutual funds</a>
-        </li>
-        <li class="nav-item">
-        <a href="#" class="nav-link">stock & securities</a>
-        </li>
-         <li class="nav-item">
-        <a href="#" class="nav-link">Pension funds</a>
-        </li> 
-        <li class="nav-item">
-            <a href="#" class="nav-link">Real Estate investment</a>
-            </li> 
-        <!-- <li class="nav-item">
+										<li class="nav-item"><a th:href="@{/inverst}" class="nav-link">
+												Investing <i class="bx bx-chevron-right"></i>
+										</a>
+											<ul class="dropdown-menu">
+												<li class="nav-item"><a href="#" class="nav-link">Personal
+														<i class="bx bx-chevron-right"></i>
+												</a>
+
+
+													<ul class="dropdown-menu">
+														<li class="nav-item"><a href="#" class="nav-link">Mutual
+																funds</a></li>
+														<li class="nav-item"><a href="#" class="nav-link">stock
+																& securities</a></li>
+														<li class="nav-item"><a href="#" class="nav-link">Pension
+																funds</a></li>
+														<li class="nav-item"><a href="#" class="nav-link">Real
+																Estate investment</a></li>
+														<!-- <li class="nav-item">
             <a href="log-in.html" class="nav-link">Bajaj Allianz</a>
             </li>
             <li class="nav-item">
             <a href="register.html" class="nav-link">ICIC</a>
             </li>
              -->
-        <!-- <li class="nav-item">
+														<!-- <li class="nav-item">
         <a href="recover-password.html" class="nav-link">Recover Password</a>
         </li> -->
-        </ul>
-        </li>
-        <li class="nav-item">
-        <a href="#" class="nav-link">Corporate
-            <i class="bx bx-chevron-right"></i>
-        </a>
-        
-    <ul class="dropdown-menu">
-        <li class="nav-item">
-        <a href="#" class="nav-link">Protecting</a>
-        </li>
-        <li class="nav-item">
-        <a href="#" class="nav-link">Investing</a>
-        </li>
-         <li class="nav-item">
-        <a href="#" class="nav-link">Finance</a>
-        </li> 
-        <!-- <li class="nav-item">
+													</ul></li>
+												<li class="nav-item"><a href="#" class="nav-link">Corporate
+														<i class="bx bx-chevron-right"></i>
+												</a>
+
+													<ul class="dropdown-menu">
+														<li class="nav-item"><a href="#" class="nav-link">Protecting</a>
+														</li>
+														<li class="nav-item"><a href="#" class="nav-link">Investing</a>
+														</li>
+														<li class="nav-item"><a href="#" class="nav-link">Finance</a>
+														</li>
+														<!-- <li class="nav-item">
             <a href="#" class="nav-link">Real Estate investment</a>
             </li>  -->
-        <!-- <li class="nav-item">
+														<!-- <li class="nav-item">
             <a href="log-in.html" class="nav-link">Bajaj Allianz</a>
             </li>
             <li class="nav-item">
             <a href="register.html" class="nav-link">ICIC</a>
             </li>
              -->
-        <!-- <li class="nav-item">
+														<!-- <li class="nav-item">
         <a href="recover-password.html" class="nav-link">Recover Password</a>
         </li> -->
-        </ul>
-        </li>
-            
-            
-        </ul>
-        </li>
-        <li class="nav-item">
-            <a href="" class="nav-link">Articles</a>
-            </li> 
-    </ul>
-    </li>
-    <li class="nav-item">
-    <a href="#" class="nav-link">
-    Insurance
-    <i class="bx bx-chevron-down"></i>
-    </a>
-    <ul class="dropdown-menu">
-    <li class="nav-item">
-    <a href="life-insurance.html" class="nav-link">Business Insurance</a>
-    </li>
-    <li class="nav-item">
-    <a href="health-insurance.html" class="nav-link">Health Insurance</a>
-    </li>
-    <li class="nav-item">
-    <a href="car-insurance.html" class="nav-link">Life Insurance</a>
-    </li>
-    <!-- <li class="nav-item">
+													</ul></li>
+
+
+											</ul></li>
+										<li class="nav-item"><a href="" class="nav-link">Articles</a>
+										</li>
+									</ul></li>
+								<li class="nav-item"><a href="#" class="nav-link">
+										Insurance <i class="bx bx-chevron-down"></i>
+								</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a th:href="@{/life-insurance}"
+											class="nav-link">Business Insurance</a></li>
+										<li class="nav-item"><a th:href="@{/health-insurance}"
+											class="nav-link">Health Insurance</a></li>
+										<li class="nav-item"><a th:href="@{/car-insurance}"
+										
+											class="nav-link">Life Insurance</a></li>
+										<!-- <li class="nav-item">
     <a href="" class="nav-link">Travel Insurance</a>
     </li>
     <li class="nav-item">
-        <a href="" class="nav-link">Home Insurance</a>
+        <a th:href="@{/}" class="nav-link">Home Insurance</a>
         </li> -->
-    </ul>
-    </li>
-    <li class="nav-item">
-    <a href="#" class="nav-link">
-    plans
-    <i class="bx bx-chevron-down"></i>
-    </a>
-    <ul class="dropdown-menu">
-    <li class="nav-item">
-    <a href="blog-column-one.html" class="nav-link">insurance plan</a>
-    </li>
-    <li class="nav-item">
-    <a href="blog-column-two.html" class="nav-link">special plan</a>
-    </li>
-    <li class="nav-item">
-    <a href="blog-column-three.html" class="nav-link">Pension plan</a>
-    </li>
-    <li class="nav-item">
-    <a href="blog-left-sidebar.html" class="nav-link">Health plan</a>
-    </li>
-    <!-- <li class="nav-item">
+									</ul></li>
+								<li class="nav-item"><a href="#" class="nav-link">
+										plans <i class="bx bx-chevron-down"></i>
+								</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a th:href="@{/blog-column-one}"
+											class="nav-link">insurance plan</a></li>
+										<li class="nav-item"><a th:href="@{/blog-column-two}"
+											class="nav-link">special plan</a></li>
+										<li class="nav-item"><a th:href="@{/blog-column-three}"
+											class="nav-link">Pension plan</a></li>
+										<li class="nav-item"><a th:href="@{/blog-left-sidebar}"
+											class="nav-link">Health plan</a></li>
+										<!-- <li class="nav-item">
     <a href="blog-details.html" class="nav-link">Blog Details</a>
     </li> -->
-    </ul>
-    </li>
-     <li class="nav-item">
-    <a href="contact-us.html" class="nav-link">Contact Us</a>
-    </li>
-    
-    
-    </ul>
-    <div class="others-option">
-     <!-- <form class="search-box">
+									</ul></li>
+								<li class="nav-item"><a th:href="@{/contact-us}"
+									class="nav-link">Contact Us</a></li>
+
+
+							</ul>
+							<div class="others-option">
+								<!-- <form class="search-box">
     <input type="text" name="Search" placeholder="Search for..." class="form-control">
     <button type="submit" class="search-btn">
     <i class="bx bx-search"></i>
@@ -408,42 +356,38 @@
     <i class="bx bx-x"></i>
     </button>
     </form>  -->
-     <!-- <div class="call-us">
+								<!-- <div class="call-us">
     <i class="bx bx-phone-call"></i>
     <a href="tel:+1-(514)-312-5678">+1 (514) 312-5678</a>
     </div>  -->
-    <div class="get-quote" style="padding: 5px;"  >
-        
-    <a href="/login" class="default-btn" >
-    Login
-    </a>
-    
-        <a href="/signup"  class="default-btn" >
-        Register
-        </a>
-        <!-- <a href="#"   class="default-btn"  data-toggle="modal" data-target="#staticBackdrop-2">
+								<div class="get-quote" style="padding: 5px;">
+
+									<a href="/login" class="default-btn"> Login </a> <a
+										href="/signup" class="default-btn"> Register </a>
+									<!-- <a href="#"   class="default-btn"  data-toggle="modal" data-target="#staticBackdrop-2">
         Get a quote
         </a> -->
-       
-    </div>
-    </div>
-    </div>
-    </nav>
-    </div>
-    </div>
-     <div class="others-option-for-responsive">
-    <div class="container">
-    <div class="dot-menu">
-    <div class="inner">
-    <div class="circle circle-one"></div>
-    <div class="circle circle-two"></div>
-    <div class="circle circle-three"></div>
-    </div>
-    </div>
-    <div class="container">
-    <div class="option-inner">
-    <div class="others-option justify-content-center d-flex align-items-center">
-     <!-- <form class="search-box">
+
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="others-option-for-responsive">
+				<div class="container">
+					<div class="dot-menu">
+						<div class="inner">
+							<div class="circle circle-one"></div>
+							<div class="circle circle-two"></div>
+							<div class="circle circle-three"></div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="option-inner">
+							<div
+								class="others-option justify-content-center d-flex align-items-center">
+								<!-- <form class="search-box">
     <input type="text" name="Search" placeholder="Search for..." class="form-control">
     <button type="submit" class="search-btn">
     <i class="bx bx-search"></i>
@@ -452,106 +396,109 @@
     <i class="bx bx-x"></i>
     </button> 
     </form> -->
-    <!-- <div class="call-us">
+								<!-- <div class="call-us">
     <i class="bx bx-phone-call"></i>
     <a href="tel:+1-(514)-312-5678">+1 (514) 312-5678</a>
     </div> -->
-    <div class="get-quote">
-    <a href="sign_in.html" class="default-btn">
-    Login
-    </a>
-    <a href="sign_up.html" class="default-btn">
-        Register
-        </a>
-        <!-- <a href="pricing.html" class="default-btn">
+								<div class="get-quote">
+									<a href="sign_in.html" class="default-btn"> Login </a> <a
+										href="sign_up.html" class="default-btn"> Register </a>
+									<!-- <a href="pricing.html" class="default-btn">
             Get a Quote
             </a> -->
-                
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    
-    </header>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
 
 
-<section class="hero-slider-area">
-<div class="hero-slider owl-theme owl-carousel" data-slider-id="1">
-<div class="hero-slider-item bg-1">
-<div class="d-table">
-<div class="d-table-cell">
-<div class="container-fluid">
-<div class="hero-slider-content">
-<span class="top-title">Our Main Purpose</span>
-<h1><span>Insuring</span> Your Life,<span>In The Easy Way</span></h1>
-<!-- <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat tempor invidunt ut labore.</p> -->
- <!-- <div class="slider-btn">
+	<section class="hero-slider-area">
+		<div class="hero-slider owl-theme owl-carousel" data-slider-id="1">
+			<div class="hero-slider-item bg-1">
+				<div class="d-table">
+					<div class="d-table-cell">
+						<div class="container-fluid">
+							<div class="hero-slider-content">
+								<span class="top-title">Our Main Purpose</span>
+								<h1>
+									<span>Insuring</span> Your Life,<span>In The Easy Way</span>
+								</h1>
+								<!-- <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat tempor invidunt ut labore.</p> -->
+								<!-- <div class="slider-btn">
  <a href="" class="default-btn">
 Contact Us
 </a> 
 </div> -->
-</div>
-</div>
-</div>
-</div>
-</div> 
-<div class="hero-slider-item bg-2">
-<div class="d-table">
-<div class="d-table-cell">
-<div class="container-fluid">
-<div class="hero-slider-content">
-<span class="top-title">Our Main Purpose</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hero-slider-item bg-2">
+				<div class="d-table">
+					<div class="d-table-cell">
+						<div class="container-fluid">
+							<div class="hero-slider-content">
+								<span class="top-title">Our Main Purpose</span>
 
-<h1><span>Creating </span>Savings Habits Among <span>People</span></h1>
-<!-- <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat tempor invidunt ut labore.</p> -->
-<div class="slider-btn">
-<!-- <a href="contact-us.html" class="default-btn">
+								<h1>
+									<span>Creating </span>Savings Habits Among <span>People</span>
+								</h1>
+								<!-- <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat tempor invidunt ut labore.</p> -->
+								<div class="slider-btn">
+									<!-- <a href="contact-us.html" class="default-btn">
 Contact Us
 </a> -->
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="hero-slider-item bg-3">
-<div class="d-table">
-<div class="d-table-cell">
-<div class="container-fluid">
-<div class="hero-slider-content">
-<span class="top-title">Our Main Purpose</span>
-<h1><span>Should</span> Be Insurance For <span>Citizen</span></h1>
-<!-- <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat tempor invidunt ut labore.</p> -->
-<!-- <div class="slider-btn">
- <a href="contact-us.html" class="default-btn">
-Contact Us
-</a>
-</div> -->
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hero-slider-item bg-3">
+				<div class="d-table">
+					<div class="d-table-cell">
+						<div class="container-fluid">
+							<div class="hero-slider-content">
+								<span class="top-title">Our Main Purpose</span>
+								<h1>
+									<span>Should</span> Be Insurance For <span>Citizen</span>
+								</h1>
+								<!-- <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat tempor invidunt ut labore.</p> -->
+								<div class="slider-btn">
+									<!--  <a th:href="@{/contact-us}" class="default-btn">-->
 
-<div class="thumbs-wrap">
-<div class="owl-thumbs hero-slider-thumb" data-slider-id="1">
-<div class="owl-thumb-item">
-<span>01</span>
-</div>
-<div class="owl-thumb-item">
-<span>02</span>
-</div>
-<div class="owl-thumb-item">
-<span>03</span>
-</div>
-</div>
-</div>
+									<li class="nav-item"><a th:href="@{/contact-us}"
+										class="nav-link">Contact Us</a></li> </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-<!-- <ul>
+		<div class="thumbs-wrap">
+			<div class="owl-thumbs hero-slider-thumb" data-slider-id="1">
+				<div class="owl-thumb-item">
+					<span>01</span>
+				</div>
+				<div class="owl-thumb-item">
+					<span>02</span>
+				</div>
+				<div class="owl-thumb-item">
+					<span>03</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- <ul>
 <li>
 <a href="#" target="_blank">
 Facebook
@@ -573,755 +520,761 @@ Linkedin
 </a>
 </li>
 </ul> -->
- <nav class="icon">
-    <ul>
- <!-- <li><a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li> -->
-<li><a href="#"><i class="fas fa-phone-volume"></i><span>CallmeBack</span></a></li>
-<li><a href="#"><i class="fas fa-desktop"></i><span>Onlinepay</span></a></li>
-<li><a href="#"><i class="fas fa-mobile-alt"></i><span>GetinTouch</span></a></li>
-<li><a href="#"><i class="fas fa-envelope-open-text"></i><span>Mail</span></a></li>
-<li><a href="#"><i class="fas fa-calculator"></i><span>Calculator</span></a></li>
-</ul>
-</nav>
-</section>
-<section class="welcome-area">
-   <div class="container">
-   <div class="section-title">
-   <span style="font-size: 40px">ABOUT US</span>
-   <h2 style="
-   font-size: 13px;
-   margin-bottom: 15px;
-   line-height: 1.8;">The life and property of an individual are surrounded by the risk of death, disability or destruction. These risks may result in financial losses. Insurance is a prudent way to transfer such risks to an insurance company. 
-      In this article we cover the following topics Insurance is a legal agreement between two parties i.e. the insurance company (insurer) and the individual (insured). In this, the insurance company promises to make good the losses of the insured on happening of the insured contingency. The contingency is the event which causes a loss. 
-      It can be the death of the policyholder or damage/destruction of the property. It’s called a contingency because there’s an uncertainty regarding happening of the event. 
-      The insured pays a premium in return for the promise made by the insurer.  </h2>
-   </div>
-<section class="health-insurance-area pt-100 pb-70">
-   <div class="container">
-   <div class="health-insurance-content">
-   <div class="content step-1">
-   <div class="row">
-   <div class="col-lg-5">
-   <h3>why choose us insurance?</h3>
-   <span>Insurance can help you save money.</span>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut laboriosam officia deleniti numquam, fugit qui, sint rerum esse eos sit provident ea. Inventore blanditiis nihil iure</p>
-   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad provident id sequi repellendus accusamus maiores itaque, in impedit nam saepe ducimus magni error corrupti enim voluptate libero, perferendis, nobis architecto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi commodi quos porro ratione obcaecati. Libero officiis nesciunt non temporibus, maxime optio voluptate nihil omni</p>
-   </div>
-   <div class="col-lg-7">
-      <div class="health-insurance-img">
-      </div>
-      </div>
-      </div>
-      </div>
-</section>
+		<nav class="icon">
+			<ul>
+				<!-- <li><a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li> -->
+				<li><a href="#"><i class="fas fa-phone-volume"></i><span>CallmeBack</span></a></li>
+				<li><a href="#"><i class="fas fa-desktop"></i><span>Onlinepay</span></a></li>
+				<li><a href="#"><i class="fas fa-mobile-alt"></i><span>GetinTouch</span></a></li>
+				<li><a href="#"><i class="fas fa-envelope-open-text"></i><span>Mail</span></a></li>
+				<li><a href="#"><i class="fas fa-calculator"></i><span>Calculator</span></a></li>
+			</ul>
+		</nav>
+	</section>
+	<section class="welcome-area">
+		<div class="container">
+			<div class="section-title">
+				<span style="font-size: 40px">ABOUT US</span>
+				<h2 style="font-size: 13px; margin-bottom: 15px; line-height: 1.8;">The
+					life and property of an individual are surrounded by the risk of
+					death, disability or destruction. These risks may result in
+					financial losses. Insurance is a prudent way to transfer such risks
+					to an insurance company. In this article we cover the following
+					topics Insurance is a legal agreement between two parties i.e. the
+					insurance company (insurer) and the individual (insured). In this,
+					the insurance company promises to make good the losses of the
+					insured on happening of the insured contingency. The contingency is
+					the event which causes a loss. It can be the death of the
+					policyholder or damage/destruction of the property. It’s called a
+					contingency because there’s an uncertainty regarding happening of
+					the event. The insured pays a premium in return for the promise
+					made by the insurer.</h2>
+			</div>
+			<section class="health-insurance-area pt-100 pb-70">
+				<div class="container">
+					<div class="health-insurance-content">
+						<div class="content step-1">
+							<div class="row">
+								<div class="col-lg-5">
+									<h3>why choose us insurance?</h3>
+									<span>Insurance can help you save money.</span>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Ut laboriosam officia deleniti numquam, fugit qui, sint rerum
+										esse eos sit provident ea. Inventore blanditiis nihil iure</p>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing
+										elit. Ad provident id sequi repellendus accusamus maiores
+										itaque, in impedit nam saepe ducimus magni error corrupti enim
+										voluptate libero, perferendis, nobis architecto. Lorem ipsum
+										dolor sit, amet consectetur adipisicing elit. Sequi commodi
+										quos porro ratione obcaecati. Libero officiis nesciunt non
+										temporibus, maxime optio voluptate nihil omni</p>
+								</div>
+								<div class="col-lg-7">
+									<div class="health-insurance-img"></div>
+								</div>
+							</div>
+						</div>
+			</section>
 
-<section class="why-chose-us-area why-chose-us-area-two">
-   <div class="container">
-   <div class="row">
-   <div class="col-lg-6 p-0">
-   <div class="choose-us-content">
-   <span class="top-title">Why Chose Us</span>
-   <h2>We Are Award Winning Company</h2>
-   
-   <ul>
-   <li>
-   <i class="flaticon-tick"></i>
-   25 Years of Experience
-   </li>
-   <li>
-   <i class="flaticon-tick"></i>
-   Save You Money
-   </li>
-   <li>
-   <i class="flaticon-tick"></i>
-   A Fast & Easy Application
-   </li>
-   <li>
-   <i class="flaticon-tick"></i>
-   24/7 Support
-   </li>
-   <li>
-   <i class="flaticon-tick"></i>
-   Growing Your Business
-   </li>
-   </ul>
-   <a href="#" class="default-btn">
-   Learn More
-   </a>
-   </div>
-   </div>
-   <div class="col-lg-6 p-0">
-   <div class="why-choose-us-img jarallax" data-jarallax='{"speed": 0.3}'>
-   <div class="choose-us-video">
-   <a href="https://youtu.be/6TlMflQEpt8" class="popup-youtube">
-   <div class="video-button">
-   <i class="bx bx-play"></i>
-   </div>
-   </a>
-   </div>
-   </div>
-   </div>
-   </div>
-   </div>
-   </section>
-   <section class="get-quote-area get-quote-area-two">
-      <div class="container">
-      <div class="row">
-      <div class="col-lg-6 p-0">
-      <div class="get-quote-img jarallax" data-jarallax='{"speed": 0.3}'>
-      </div>
-      </div>
-      <div class="col-lg-6 p-0">
-      <div class="tab get-quote-tab">
-      <div class="section-title">
-      
-      <h2>Get Insurance Quote</h2>
-      </div>
-      <ul class="tabs">
-      <li>
-      Life Insurance
-      </li>
-      <li>
-      Home Insurance
-      </li>
-      <li>
-      general inusrance
-      </li>
-      <li>
-      Travel Insurance
-      </li>
-      </ul>
-      <div class="tab_content">
-      <div class="tabs_item">
-      <form class="get-quote-form">
-      <div class="we-area-title">
-      <h3>Life Insurance </h3>
-      </div>
-      <div class="row">
-      <div class="col-lg-12">
-      <div class="all-skill-bar">
-      <div class="skill-bar" data-percentage="25%">
-      <h4 class="progress-title-holder">
-      <span class="progress-title">Leave of Protection:</span>
-      <span class="usd">$180.00</span>
-      <span class="progress-number-wrapper">
-      <span class="progress-number-mark">
-      <span class="percent"></span>
-      <span class="down-arrow"></span>
-      </span>
-      </span>
-      </h4>
-      <div class="progress-content-outter">
-      <div class="progress-content"></div>
-       </div>
-      </div>
-      </div>
-      </div>
-      <div class="col-lg-12">
-      <span class="from-title">Personal Information:</span>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <select>
-      <option value="1">Employment Status</option>
-      <option value="2">Services Man</option>
-      <option value="3">Management</option>
-      <option value="4">Receiver</option>
-      <option value="5">Cline</option>
-      </select>
-      </div>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <select>
-      <option value="1">Your Age</option>
-      <option value="2">29</option>
-      <option value="3">18</option>
-      <option value="4">22</option>
-      <option value="5">30</option>
-      </select>
-      </div>
-      </div>
-      </div>
-      <div class="row">
-      <div class="col-lg-12">
-      <span class="from-title">Contact Details:</span>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <input type="text" class="form-control" id="First-Name-1" placeholder="Name">
-      </div>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <input type="email" class="form-control" id="Email-1" placeholder="Email">
-      </div>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <input type="text" class="form-control" id="Number-1" placeholder="Phone Number">
-      </div>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <button type="submit" class="default-btn">
-      Get a Quote
-      </button>
-      </div>
-      </div>
-      </form>
-      </div>
-      <div class="tabs_item">
-      <form class="get-quote-form">
-      <div class="we-area-title">
-      <h3>Home Insurance </h3>
-      </div>
-      <div class="row">
-      <div class="col-lg-12">
-      <div class="all-skill-bar">
-      <div class="skill-bar" data-percentage="50%">
-      <h4 class="progress-title-holder">
-      <span class="progress-title">Leave of Protection:</span>
-      <span class="usd">$180.00</span>
-      <span class="progress-number-wrapper">
-      <span class="progress-number-mark">
-      <span class="percent"></span>
-      <span class="down-arrow"></span>
-      </span>
-      </span>
-      </h4>
-      <div class="progress-content-outter">
-      <div class="progress-content"></div>
-      </div>
-      </div>
-      </div>
-      </div>
-      <div class="col-lg-12">
-      <span class="from-title">Personal Information:</span>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <select>
-      <option value="1">Employment Status</option>
-      <option value="2">Services Man</option>
-      <option value="3">Management</option>
-      <option value="4">Receiver</option>
-      <option value="5">Cline</option>
-      </select>
-      </div>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <select>
-      <option value="1">Your Age</option>
-      <option value="2">29</option>
-      <option value="3">18</option>
-      <option value="4">22</option>
-      <option value="5">30</option>
-      </select>
-      </div>
-      </div>
-      </div>
-      <div class="row">
-      <div class="col-lg-12">
-      <span class="from-title">Contact Details:</span>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <input type="text" class="form-control" id="First-Name-2" placeholder="Name">
-      </div>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <input type="email" class="form-control" id="Email-2" placeholder="Email">
-      </div>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <input type="text" class="form-control" id="Number-2" placeholder="Phone Number">
-      </div>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <button type="submit" class="default-btn">
-      Get a Quote
-      </button>
-      </div>
-      </div>
-      </form>
-      </div>
-      <div class="tabs_item">
-      <form class="get-quote-form">
-      <div class="we-area-title">
-      <h3>general insurance in life </h3>
-      </div>
-      <div class="row">
-      <div class="col-lg-12">
-      <div class="all-skill-bar">
-      <div class="skill-bar" data-percentage="75%">
-      <h4 class="progress-title-holder">
-      <span class="progress-title">Leave of Protection:</span>
-      <span class="usd">$180.00</span>
-      <span class="progress-number-wrapper">
-      <span class="progress-number-mark">
-      <span class="percent"></span>
-      <span class="down-arrow"></span>
-      </span>
-      </span>
-      </h4>
-      <div class="progress-content-outter">
-      <div class="progress-content"></div>
-      </div>
-      </div>
-      </div>
-      </div>
-      <div class="col-lg-12">
-      <span class="from-title">Personal Information:</span>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <select>
-      <option value="1">Employment Status</option>
-      <option value="2">Services Man</option>
-      <option value="3">Management</option>
-      <option value="4">Receiver</option>
-      <option value="5">Cline</option>
-      </select>
-      </div>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <select>
-      <option value="1">Your Age</option>
-      <option value="2">29</option>
-      <option value="3">18</option>
-      <option value="4">22</option>
-      <option value="5">30</option>
-      </select>
-      </div>
-      </div>
-      </div>
-      <div class="row">
-      <div class="col-lg-12">
-      <span class="from-title">Contact Details:</span>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <input type="text" class="form-control" id="First-Name-3" placeholder="Name">
-      </div>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <input type="email" class="form-control" id="Email-3" placeholder="Email">
-      </div>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <input type="text" class="form-control" id="Number-3" placeholder="Phone Number">
-      </div>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <button type="submit" class="default-btn">
-      Get a Quote
-      </button>
-      </div>
-      </div>
-      </form>
-      </div>
-      
-      <div class="tabs_item">
-      <form class="get-quote-form">
-      <div class="we-area-title">
-      <h3>Travel Insurance Quote</h3>
-      </div>
-      <div class="row">
-      <div class="col-lg-12">
-      <div class="all-skill-bar">
-      <div class="skill-bar" data-percentage="100%">
-      <h4 class="progress-title-holder">
-      <span class="progress-title">Leave of Protection:</span>
-      <span class="usd">$180.00</span>
-      <span class="progress-number-wrapper">
-      <span class="progress-number-mark">
-      <span class="percent"></span>
-      <span class="down-arrow"></span>
-      </span>
-      </span>
-      </h4>
-      <div class="progress-content-outter">
-      <div class="progress-content"></div>
-      </div>
-      </div>
-      </div>
-      </div>
-      <div class="col-lg-12">
-      <span class="from-title">Personal Information:</span>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <select>
-      <option value="1">Employment Status</option>
-      <option value="2">Services Man</option>
-      <option value="3">Management</option>
-      <option value="4">Receiver</option>
-      <option value="5">Cline</option>
-      </select>
-      </div>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <select>
-      <option value="1">Your Age</option>
-      <option value="2">29</option>
-      <option value="3">18</option>
-      <option value="4">22</option>
-      <option value="5">30</option>
-      </select>
-      </div>
-      </div>
-      </div>
-      <div class="row">
-      <div class="col-lg-12">
-      <span class="from-title">Contact Details:</span>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <input type="text" class="form-control" id="First-Name-4" placeholder="Name">
-      </div>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <input type="email" class="form-control" id="Email-4" placeholder="Email">
-      </div>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <div class="form-group">
-      <input type="text" class="form-control" id="Number-4" placeholder="Phone Number">
-      </div>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-      <button type="submit" class="default-btn">
-      Get a Quote
-      </button>
-      </div>
-      </div>
-      </form>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </section>
-<section class="future-area future-area-two future-area-three pt-100 pb-70">
-<div class="container">
-<div class="row">
-<div class="col-lg-4 col-md-6">
-<div class="single-future-box">
-<i class="flaticon-trustworthy"></i>
-<h3>Policy delivery</h3>
-<p>within 10 seconds</p>
-</div>
-</div>
-<div class="col-lg-4 col-md-6">
-<div class="single-future-box">
-<i class="flaticon-saving"></i>
-<h3>instant renewal</h3>
-<p>without paperwork​</p>
-</div>
-</div>
-<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-<div class="single-future-box">
-<i class="flaticon-cross"></i>
-<h3>Tax Savings</h3>
-<p>under section 80D</p>
-</div>
-</div>
-</div>
-</div>
-<div class="container">
-   <div class="row">
-   <div class="col-lg-4 col-md-6">
-   <div class="single-future-box">
-   <i class="flaticon-trustworthy"></i>
-   <h3>Data&payment</h3>
-   <p>security</p>
-   </div>
-   </div>
-   <div class="col-lg-4 col-md-6">
-   <div class="single-future-box ">
-   <i class="flaticon-saving"></i>
-   <h3>ISO 9001:2015</h3>
-   <p>Certified</p>
-   </div>
-   </div>
-   <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-   <div class="single-future-box">
-   <i class="flaticon-cross"></i>
-   <h3>Licensed by</h3>
-   <p>IRDAI (Reg. No. 103)</p>
-   </div>
-   </div>
-   </div>
-   </div>
-</section>
+			<section class="why-chose-us-area why-chose-us-area-two">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 p-0">
+							<div class="choose-us-content">
+								<span class="top-title">Why Chose Us</span>
+								<h2>We Are Award Winning Company</h2>
+
+								<ul>
+									<li><i class="flaticon-tick"></i> 25 Years of Experience</li>
+									<li><i class="flaticon-tick"></i> Save You Money</li>
+									<li><i class="flaticon-tick"></i> A Fast & Easy
+										Application</li>
+									<li><i class="flaticon-tick"></i> 24/7 Support</li>
+									<li><i class="flaticon-tick"></i> Growing Your Business</li>
+								</ul>
+								<a href="#" class="default-btn"> Learn More </a>
+							</div>
+						</div>
+						<div class="col-lg-6 p-0">
+							<div class="why-choose-us-img jarallax"
+								data-jarallax='{"speed": 0.3}'>
+								<div class="choose-us-video">
+									<a href="https://youtu.be/6TlMflQEpt8" class="popup-youtube">
+										<div class="video-button">
+											<i class="bx bx-play"></i>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="get-quote-area get-quote-area-two">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 p-0">
+							<div class="get-quote-img jarallax"
+								data-jarallax='{"speed": 0.3}'></div>
+						</div>
+						<div class="col-lg-6 p-0">
+							<div class="tab get-quote-tab">
+								<div class="section-title">
+
+									<h2>Get Insurance Quote</h2>
+								</div>
+								<ul class="tabs">
+									<li>Life Insurance</li>
+									<li>Home Insurance</li>
+									<li>general inusrance</li>
+									<li>Travel Insurance</li>
+								</ul>
+								<div class="tab_content">
+									<div class="tabs_item">
+										<form class="get-quote-form">
+											<div class="we-area-title">
+												<h3>Life Insurance</h3>
+											</div>
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="all-skill-bar">
+														<div class="skill-bar" data-percentage="25%">
+															<h4 class="progress-title-holder">
+																<span class="progress-title">Leave of Protection:</span>
+																<span class="usd">$180.00</span> <span
+																	class="progress-number-wrapper"> <span
+																	class="progress-number-mark"> <span
+																		class="percent"></span> <span class="down-arrow"></span>
+																</span>
+																</span>
+															</h4>
+															<div class="progress-content-outter">
+																<div class="progress-content"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12">
+													<span class="from-title">Personal Information:</span>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<select>
+															<option value="1">Employment Status</option>
+															<option value="2">Services Man</option>
+															<option value="3">Management</option>
+															<option value="4">Receiver</option>
+															<option value="5">Cline</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<select>
+															<option value="1">Your Age</option>
+															<option value="2">29</option>
+															<option value="3">18</option>
+															<option value="4">22</option>
+															<option value="5">30</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-12">
+													<span class="from-title">Contact Details:</span>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<input type="text" class="form-control" id="First-Name-1"
+															placeholder="Name">
+													</div>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<input type="email" class="form-control" id="Email-1"
+															placeholder="Email">
+													</div>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<input type="text" class="form-control" id="Number-1"
+															placeholder="Phone Number">
+													</div>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<button type="submit" class="default-btn">Get a
+														Quote</button>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="tabs_item">
+										<form class="get-quote-form">
+											<div class="we-area-title">
+												<h3>Home Insurance</h3>
+											</div>
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="all-skill-bar">
+														<div class="skill-bar" data-percentage="50%">
+															<h4 class="progress-title-holder">
+																<span class="progress-title">Leave of Protection:</span>
+																<span class="usd">$180.00</span> <span
+																	class="progress-number-wrapper"> <span
+																	class="progress-number-mark"> <span
+																		class="percent"></span> <span class="down-arrow"></span>
+																</span>
+																</span>
+															</h4>
+															<div class="progress-content-outter">
+																<div class="progress-content"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12">
+													<span class="from-title">Personal Information:</span>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<select>
+															<option value="1">Employment Status</option>
+															<option value="2">Services Man</option>
+															<option value="3">Management</option>
+															<option value="4">Receiver</option>
+															<option value="5">Cline</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<select>
+															<option value="1">Your Age</option>
+															<option value="2">29</option>
+															<option value="3">18</option>
+															<option value="4">22</option>
+															<option value="5">30</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-12">
+													<span class="from-title">Contact Details:</span>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<input type="text" class="form-control" id="First-Name-2"
+															placeholder="Name">
+													</div>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<input type="email" class="form-control" id="Email-2"
+															placeholder="Email">
+													</div>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<input type="text" class="form-control" id="Number-2"
+															placeholder="Phone Number">
+													</div>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<button type="submit" class="default-btn">Get a
+														Quote</button>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="tabs_item">
+										<form class="get-quote-form">
+											<div class="we-area-title">
+												<h3>general insurance in life</h3>
+											</div>
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="all-skill-bar">
+														<div class="skill-bar" data-percentage="75%">
+															<h4 class="progress-title-holder">
+																<span class="progress-title">Leave of Protection:</span>
+																<span class="usd">$180.00</span> <span
+																	class="progress-number-wrapper"> <span
+																	class="progress-number-mark"> <span
+																		class="percent"></span> <span class="down-arrow"></span>
+																</span>
+																</span>
+															</h4>
+															<div class="progress-content-outter">
+																<div class="progress-content"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12">
+													<span class="from-title">Personal Information:</span>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<select>
+															<option value="1">Employment Status</option>
+															<option value="2">Services Man</option>
+															<option value="3">Management</option>
+															<option value="4">Receiver</option>
+															<option value="5">Cline</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<select>
+															<option value="1">Your Age</option>
+															<option value="2">29</option>
+															<option value="3">18</option>
+															<option value="4">22</option>
+															<option value="5">30</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-12">
+													<span class="from-title">Contact Details:</span>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<input type="text" class="form-control" id="First-Name-3"
+															placeholder="Name">
+													</div>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<input type="email" class="form-control" id="Email-3"
+															placeholder="Email">
+													</div>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<input type="text" class="form-control" id="Number-3"
+															placeholder="Phone Number">
+													</div>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<button type="submit" class="default-btn">Get a
+														Quote</button>
+												</div>
+											</div>
+										</form>
+									</div>
+
+									<div class="tabs_item">
+										<form class="get-quote-form">
+											<div class="we-area-title">
+												<h3>Travel Insurance Quote</h3>
+											</div>
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="all-skill-bar">
+														<div class="skill-bar" data-percentage="100%">
+															<h4 class="progress-title-holder">
+																<span class="progress-title">Leave of Protection:</span>
+																<span class="usd">$180.00</span> <span
+																	class="progress-number-wrapper"> <span
+																	class="progress-number-mark"> <span
+																		class="percent"></span> <span class="down-arrow"></span>
+																</span>
+																</span>
+															</h4>
+															<div class="progress-content-outter">
+																<div class="progress-content"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12">
+													<span class="from-title">Personal Information:</span>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<select>
+															<option value="1">Employment Status</option>
+															<option value="2">Services Man</option>
+															<option value="3">Management</option>
+															<option value="4">Receiver</option>
+															<option value="5">Cline</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<select>
+															<option value="1">Your Age</option>
+															<option value="2">29</option>
+															<option value="3">18</option>
+															<option value="4">22</option>
+															<option value="5">30</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-12">
+													<span class="from-title">Contact Details:</span>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<input type="text" class="form-control" id="First-Name-4"
+															placeholder="Name">
+													</div>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<input type="email" class="form-control" id="Email-4"
+															placeholder="Email">
+													</div>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<div class="form-group">
+														<input type="text" class="form-control" id="Number-4"
+															placeholder="Phone Number">
+													</div>
+												</div>
+												<div class="col-lg-6 col-sm-6">
+													<button type="submit" class="default-btn">Get a
+														Quote</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				class="future-area future-area-two future-area-three pt-100 pb-70">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-6">
+							<div class="single-future-box">
+								<i class="flaticon-trustworthy"></i>
+								<h3>Policy delivery</h3>
+								<p>within 10 seconds</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-future-box">
+								<i class="flaticon-saving"></i>
+								<h3>instant renewal</h3>
+								<p>without paperwork​</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+							<div class="single-future-box">
+								<i class="flaticon-cross"></i>
+								<h3>Tax Savings</h3>
+								<p>under section 80D</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-6">
+							<div class="single-future-box">
+								<i class="flaticon-trustworthy"></i>
+								<h3>Data&payment</h3>
+								<p>security</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-future-box ">
+								<i class="flaticon-saving"></i>
+								<h3>ISO 9001:2015</h3>
+								<p>Certified</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+							<div class="single-future-box">
+								<i class="flaticon-cross"></i>
+								<h3>Licensed by</h3>
+								<p>IRDAI (Reg. No. 103)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 
-<section class="welcome-area">
-<div class="container">
-<div class="section-title">
-<span>Welcome to epolicystore</span>
-<h2> Our Company Has Been Working Very Faithfully</h2>
-</div>
-<div class="welcome-bg ptb-100">
-<div class="welcome-content">
-<h2>Our Goal Is to Provide Quality Service to Customers</h2>
-<p class="some-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-<a href="about-us.html" class="default-btn">
-Read More
-</a>
-</div>
-</div>
-</div>
-</section>
+			<section class="welcome-area">
+				<div class="container">
+					<div class="section-title">
+						<span>Welcome to epolicystore</span>
+						<h2>Our Company Has Been Working Very Faithfully</h2>
+					</div>
+					<div class="welcome-bg ptb-100">
+						<div class="welcome-content">
+							<h2>Our Goal Is to Provide Quality Service to Customers</h2>
+							<p class="some-bold">Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor incididunt ut labore
+								magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna
+								aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+								viverra maecenas accumsan lacus vel facilisis.</p>
+							<a href="about-us.html" class="default-btn"> Read More </a>
+						</div>
+					</div>
+				</div>
+			</section>
 
 
-<section class="counter-area pt-100 pb-70">
-<div class="container">
-<div class="row">
-<div class="col-lg-3 col-sm-6">
-<div class="single-counter">
-<h2>
-<span class="odometer" data-count="420">00</span>
-</h2>
-<p>Cases Completed</p>
-<div class="counter-shape">
-<img src="assets/img/counter-shape.png" alt="Image">
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="single-counter">
-<h2>
-<span class="odometer" data-count="1000">00</span>
-<span class="target">+</span>
-</h2>
-<p>Satisfied Clients</p>
-<div class="counter-shape">
-<img src="assets/img/counter-shape.png" alt="Image">
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="single-counter">
-<h2>
-<span class="odometer" data-count="654">00</span>
-</h2>
-<p>Insurance Policies</p>
-<div class="counter-shape">
-<img src="assets/img/counter-shape.png" alt="Image">
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="single-counter">
-<h2>
-<span class="odometer" data-count="100">00</span>
-<span class="target">%</span>
-</h2>
-<p>Success Rate</p>
-<div class="counter-shape">
-<img src="assets/img/counter-shape.png" alt="Image">
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+			<section class="counter-area pt-100 pb-70">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-sm-6">
+							<div class="single-counter">
+								<h2>
+									<span class="odometer" data-count="420">00</span>
+								</h2>
+								<p>Cases Completed</p>
+								<div class="counter-shape">
+									<img src="assets/img/counter-shape.png" alt="Image">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="single-counter">
+								<h2>
+									<span class="odometer" data-count="1000">00</span> <span
+										class="target">+</span>
+								</h2>
+								<p>Satisfied Clients</p>
+								<div class="counter-shape">
+									<img src="assets/img/counter-shape.png" alt="Image">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="single-counter">
+								<h2>
+									<span class="odometer" data-count="654">00</span>
+								</h2>
+								<p>Insurance Policies</p>
+								<div class="counter-shape">
+									<img src="assets/img/counter-shape.png" alt="Image">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="single-counter">
+								<h2>
+									<span class="odometer" data-count="100">00</span> <span
+										class="target">%</span>
+								</h2>
+								<p>Success Rate</p>
+								<div class="counter-shape">
+									<img src="assets/img/counter-shape.png" alt="Image">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 
-<section class="featured-services-area pb-70">
-<div class="container">
-<div class="section-title">
-<span>Featured Services</span>
-<h2>All The Services That Our Company Provides</h2>
-</div>
-<div class="row">
-<div class="col-lg-4 col-md-6">
-<div class="featured-services-box">
-<a href="#">
-<img src="https://sm.mashable.com/mashable_in/seo/1/15919/15919_d4mg.jpg" alt="Image">
-</a>
-<div class="featured-services-title">
-<i class="flaticon-life-insurance-1"></i>
-<h3>
-<a href="#">
-Life Insurance
-</a>
-</h3>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6">
-<div class="featured-services-box">
-<a href="#">
-<img src="https://www.aegonlife.com/insurance-investment-knowledge/wp-content/uploads/2019/01/598x395-01-1280x720.png" style="height:250px" alt="Image">
-</a>
-<div class="featured-services-title">
-<i class="flaticon-home-insurance"></i>
-<h3>
-<a href="#">
-Home Insurance
-</a>
-</h3>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6">
-<div class="featured-services-box">
-<a href="#">
-<img src="https://www.pymnts.com/wp-content/uploads/2020/09/smb-business-insurance-restaurants.jpg" alt="Image">
-</a>
-<div class="featured-services-title">
-<i class="flaticon-insurance"></i>
-<h3>
-<a href="#">
-Business Insurance
-</a>
-</h3>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6">
-<div class="featured-services-box">
-<a href="#">
-<img src="https://thumbs.dreamstime.com/b/small-toy-house-covered-hands-property-insurance-concept-157322183.jpg" alt="Image">
-</a>
-<div class="featured-services-title">
-<i class="flaticon-property-insurance"></i>
-<h3>
-<a href="#">
-Property Insurance
-</a>
-</h3>
-</div>
- </div>
-</div>
-<div class="col-lg-4 col-md-6">
-<div class="featured-services-box">
-<a href="#">
-<img src="https://telanganatoday.com/wp-content/uploads/2019/05/TRAVEL-INSURANCE.jpg" alt="Image">
-</a>
-<div class="featured-services-title">
-<i class="flaticon-travel-insurance"></i>
-<h3>
-<a href="#">
-Travel Insurance
-</a>
-</h3>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6">
-<div class="featured-services-box">
-<a href="#">
-<img src="https://i1.wp.com/www.rapidrepairautocenter.com/wp-content/uploads/2018/09/claim-insurance-iii.png?fit=900%2C601" alt="Image">
-</a>
-<div class="featured-services-title">
-<i class="flaticon-car-insurance"></i>
-<h3>
-<a href="#">
-Auto Insurance
-</a>
-</h3>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="faq-area bg-color">
-   <div class="container-fluid">
-   <div class="row">
-   <div class="col-lg-6 p-0">
-   <div class="faq-img">
-   <div class="faq-video">
-   <a href="https://www.youtube.com/watch?v=6TlMflQEpt8" class="popup-youtube">
-   <div class="video-button">
-   <i class="bx bx-play"></i>
-   </div>
-   <span>Watch Our Company’s Video</span>
-   </a>
-   </div>
-   </div>
-   </div>
-   <div class="col-lg-6">
-   <div class="faq-content ptb-100">
-   <span class="top-title">Frequently Asked Questions</span>
-   <h2>You Can Learn a Lot From Our Questions Answer</h2>
-   <div class="faq-accordion mb-used">
-   <ul class="accordion">
-   <li class="accordion-item">
-   <a class="accordion-title active" href="javascript:void(0)">
-   <i class="bx bx-plus"></i>
-   What Is a Health Insurance Policy?
-   </a>
-   <div class="accordion-content show">
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquam ut ad debitis maxime alias vitae magnam, accusamus amet pariatur tenetur totam deserunt dolore provident nobis impedit non vel quo? aliquam ut ad debitis maxime alias</p>
-   </div>
-   </li>
-   <li class="accordion-item">
-   <a class="accordion-title" href="javascript:void(0)">
-   <i class="bx bx-plus"></i>
-   What do You Mean By Risk Management?
-   </a>
-   <div class="accordion-content">
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquam ut ad debitis maxime alias vitae magnam, accusamus amet pariatur tenetur totam deserunt dolore provident nobis impedit non vel quo? aliquam ut ad debitis maxime alias</p>
-   </div>
-   </li>
-   <li class="accordion-item">
-   <a class="accordion-title" href="javascript:void(0)">
-   <i class="bx bx-plus"></i>
-   Do I Need a Life Insurance Policy?
-   </a>
-   <div class="accordion-content">
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquam ut ad debitis maxime alias vitae magnam, accusamus amet pariatur tenetur totam deserunt dolore provident nobis impedit non vel quo? aliquam ut ad debitis maxime alias</p>
-   </div>
-   </li>
-   <li class="accordion-item">
-   <a class="accordion-title" href="javascript:void(0)">
-   <i class="bx bx-plus"></i>
-   Can I Choose Not to Get Business Insurance?
-   </a>
-   <div class="accordion-content">
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquam ut ad debitis maxime alias vitae magnam, accusamus amet pariatur tenetur totam deserunt dolore provident nobis impedit non vel quo? aliquam ut ad debitis maxime alias</p>
-   </div>
-   </li>
-   <li class="accordion-item">
-   <a class="accordion-title" href="javascript:void(0)">
-   <i class="bx bx-plus"></i>
-   How Do I Know What Deductible Applies to My Policy?
-   </a>
-   <div class="accordion-content">
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquam ut ad debitis maxime alias vitae magnam, accusamus amet pariatur tenetur totam deserunt dolore provident nobis impedit non vel quo? aliquam ut ad debitis maxime alias</p>
-   </div>
-   </li>
-   <li class="accordion-item">
-   <a class="accordion-title" href="javascript:void(0)">
-   <i class="bx bx-plus"></i>
-   What Is Personal Liability Umbrella Coverage?
-   </a>
-   <div class="accordion-content">
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquam ut ad debitis maxime alias vitae magnam, accusamus amet pariatur tenetur totam deserunt dolore provident nobis impedit non vel quo? aliquam ut ad debitis maxime alias</p>
-   </div>
-   </li>
-   </ul>
-   </div>
-   </div>
-   </div>
-   </div>
-   </div>
-   </section>
-<!-- 
+			<section class="featured-services-area pb-70">
+				<div class="container">
+					<div class="section-title">
+						<span>Featured Services</span>
+						<h2>All The Services That Our Company Provides</h2>
+					</div>
+					<div class="row">
+						<div class="col-lg-4 col-md-6">
+							<div class="featured-services-box">
+								<a href="#"> <img
+									src="https://sm.mashable.com/mashable_in/seo/1/15919/15919_d4mg.jpg"
+									alt="Image">
+								</a>
+								<div class="featured-services-title">
+									<i class="flaticon-life-insurance-1"></i>
+									<h3>
+										<a href="#"> Life Insurance </a>
+									</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="featured-services-box">
+								<a href="#"> <img
+									src="https://www.aegonlife.com/insurance-investment-knowledge/wp-content/uploads/2019/01/598x395-01-1280x720.png"
+									style="height: 250px" alt="Image">
+								</a>
+								<div class="featured-services-title">
+									<i class="flaticon-home-insurance"></i>
+									<h3>
+										<a href="#"> Home Insurance </a>
+									</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="featured-services-box">
+								<a href="#"> <img
+									src="https://www.pymnts.com/wp-content/uploads/2020/09/smb-business-insurance-restaurants.jpg"
+									alt="Image">
+								</a>
+								<div class="featured-services-title">
+									<i class="flaticon-insurance"></i>
+									<h3>
+										<a href="#"> Business Insurance </a>
+									</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="featured-services-box">
+								<a href="#"> <img
+									src="https://thumbs.dreamstime.com/b/small-toy-house-covered-hands-property-insurance-concept-157322183.jpg"
+									alt="Image">
+								</a>
+								<div class="featured-services-title">
+									<i class="flaticon-property-insurance"></i>
+									<h3>
+										<a href="#"> Property Insurance </a>
+									</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="featured-services-box">
+								<a href="#"> <img
+									src="https://telanganatoday.com/wp-content/uploads/2019/05/TRAVEL-INSURANCE.jpg"
+									alt="Image">
+								</a>
+								<div class="featured-services-title">
+									<i class="flaticon-travel-insurance"></i>
+									<h3>
+										<a href="#"> Travel Insurance </a>
+									</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="featured-services-box">
+								<a href="#"> <img
+									src="https://i1.wp.com/www.rapidrepairautocenter.com/wp-content/uploads/2018/09/claim-insurance-iii.png?fit=900%2C601"
+									alt="Image">
+								</a>
+								<div class="featured-services-title">
+									<i class="flaticon-car-insurance"></i>
+									<h3>
+										<a href="#"> Auto Insurance </a>
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="faq-area bg-color">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-6 p-0">
+							<div class="faq-img">
+								<div class="faq-video">
+									<a href="https://www.youtube.com/watch?v=6TlMflQEpt8"
+										class="popup-youtube">
+										<div class="video-button">
+											<i class="bx bx-play"></i>
+										</div> <span>Watch Our Company’s Video</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="faq-content ptb-100">
+								<span class="top-title">Frequently Asked Questions</span>
+								<h2>You Can Learn a Lot From Our Questions Answer</h2>
+								<div class="faq-accordion mb-used">
+									<ul class="accordion">
+										<li class="accordion-item"><a
+											class="accordion-title active" href="javascript:void(0)">
+												<i class="bx bx-plus"></i> What Is a Health Insurance
+												Policy?
+										</a>
+											<div class="accordion-content show">
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. Quibusdam aliquam ut ad debitis maxime alias vitae
+													magnam, accusamus amet pariatur tenetur totam deserunt
+													dolore provident nobis impedit non vel quo? aliquam ut ad
+													debitis maxime alias</p>
+											</div></li>
+										<li class="accordion-item"><a class="accordion-title"
+											href="javascript:void(0)"> <i class="bx bx-plus"></i>
+												What do You Mean By Risk Management?
+										</a>
+											<div class="accordion-content">
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. Quibusdam aliquam ut ad debitis maxime alias vitae
+													magnam, accusamus amet pariatur tenetur totam deserunt
+													dolore provident nobis impedit non vel quo? aliquam ut ad
+													debitis maxime alias</p>
+											</div></li>
+										<li class="accordion-item"><a class="accordion-title"
+											href="javascript:void(0)"> <i class="bx bx-plus"></i> Do
+												I Need a Life Insurance Policy?
+										</a>
+											<div class="accordion-content">
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. Quibusdam aliquam ut ad debitis maxime alias vitae
+													magnam, accusamus amet pariatur tenetur totam deserunt
+													dolore provident nobis impedit non vel quo? aliquam ut ad
+													debitis maxime alias</p>
+											</div></li>
+										<li class="accordion-item"><a class="accordion-title"
+											href="javascript:void(0)"> <i class="bx bx-plus"></i> Can
+												I Choose Not to Get Business Insurance?
+										</a>
+											<div class="accordion-content">
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. Quibusdam aliquam ut ad debitis maxime alias vitae
+													magnam, accusamus amet pariatur tenetur totam deserunt
+													dolore provident nobis impedit non vel quo? aliquam ut ad
+													debitis maxime alias</p>
+											</div></li>
+										<li class="accordion-item"><a class="accordion-title"
+											href="javascript:void(0)"> <i class="bx bx-plus"></i> How
+												Do I Know What Deductible Applies to My Policy?
+										</a>
+											<div class="accordion-content">
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. Quibusdam aliquam ut ad debitis maxime alias vitae
+													magnam, accusamus amet pariatur tenetur totam deserunt
+													dolore provident nobis impedit non vel quo? aliquam ut ad
+													debitis maxime alias</p>
+											</div></li>
+										<li class="accordion-item"><a class="accordion-title"
+											href="javascript:void(0)"> <i class="bx bx-plus"></i>
+												What Is Personal Liability Umbrella Coverage?
+										</a>
+											<div class="accordion-content">
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. Quibusdam aliquam ut ad debitis maxime alias vitae
+													magnam, accusamus amet pariatur tenetur totam deserunt
+													dolore provident nobis impedit non vel quo? aliquam ut ad
+													debitis maxime alias</p>
+											</div></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 
 
 <section class="why-chose-us-area why-chose-us-area-two">
 <div class="container">
@@ -1374,7 +1327,7 @@ Learn More
 </section> -->
 
 
-<!-- <section class="get-quote-area get-quote-area-two">
+			<!-- <section class="get-quote-area get-quote-area-two">
 <div class="container">
 <div class="row">
 <div class="col-lg-6 p-0">
@@ -1722,7 +1675,7 @@ Get a Quote
 </section> -->
 
 
-<!-- <section class="team-area ptb-100">
+			<!-- <section class="team-area ptb-100">
 <div class="container">
 <div class="section-title">
 <span class="top-title">Our Agent</span>
@@ -1955,82 +1908,90 @@ Get a Quote
 </div>
 </div>
 </div> -->
-<section class="services">
-   <div class="container">
-       <div class="services-title">
-           <div class="title">
-               <h2><span> Our </span> Services</h2>
-           </div>
-       </div>
+			<section class="services">
+				<div class="container">
+					<div class="services-title">
+						<div class="title">
+							<h2>
+								<span> Our </span> Services
+							</h2>
+						</div>
+					</div>
 
-       <div class="services-box">
+					<div class="services-box">
 
-           <div class="box">
-               <div class="ser-box">
-                   <div class="icon">
-                       <img src="https://github.com/animationbro/our-service-css-hover-animation/blob/master/our%20service/img/setting.png?raw=true">
-                   </div>
-                    <h4>Easy To Setup</h4>
-                    <p>Lorem Ipsum is simply dummy and typesetting industry.</p>
-               </div>
-           </div>
+						<div class="box">
+							<div class="ser-box">
+								<div class="icon">
+									<img
+										src="https://github.com/animationbro/our-service-css-hover-animation/blob/master/our%20service/img/setting.png?raw=true">
+								</div>
+								<h4>Easy To Setup</h4>
+								<p>Lorem Ipsum is simply dummy and typesetting industry.</p>
+							</div>
+						</div>
 
-           <div class="box">
-               <div class="ser-box">
-                   <div class="icon">
-                       <img src="https://github.com/animationbro/our-service-css-hover-animation/blob/master/our%20service/img/speed.png?raw=true">
-                   </div>
-                    <h4>Fast Preformance</h4>
-                    <p>Lorem Ipsum is simply dummy and typesetting industry.</p>
-               </div>
-           </div>
+						<div class="box">
+							<div class="ser-box">
+								<div class="icon">
+									<img
+										src="https://github.com/animationbro/our-service-css-hover-animation/blob/master/our%20service/img/speed.png?raw=true">
+								</div>
+								<h4>Fast Preformance</h4>
+								<p>Lorem Ipsum is simply dummy and typesetting industry.</p>
+							</div>
+						</div>
 
-           <div class="box">
-               <div class="ser-box">
-                   <div class="icon">
-                       <img src="https://github.com/animationbro/our-service-css-hover-animation/blob/master/our%20service/img/protect.png?raw=true">
-                   </div>
-                    <h4>Privacy Protected</h4>
-                    <p>Lorem Ipsum is simply dummy and typesetting industry.</p>
-               </div>
-           </div>
-
-
-           <div class="box">
-               <div class="ser-box">
-                   <div class="icon">
-                       <img src="https://github.com/animationbro/our-service-css-hover-animation/blob/master/our%20service/img/backup.png?raw=true">
-                   </div>
-                    <h4>Monthly Backup</h4>
-                    <p>Lorem Ipsum is simply dummy and typesetting industry.</p>
-               </div>
-           </div>
-
-           <div class="box">
-               <div class="ser-box">
-                   <div class="icon">
-                       <img src="https://github.com/animationbro/our-service-css-hover-animation/blob/master/our%20service/img/freessl.png?raw=true">
-                   </div>
-                    <h4>Free SSL Certificate</h4>
-                    <p>Lorem Ipsum is simply dummy and typesetting industry.</p>
-               </div>
-           </div>
-
-           <div class="box">
-               <div class="ser-box">
-                   <div class="icon">
-                       <img src="https://github.com/animationbro/our-service-css-hover-animation/blob/master/our%20service/img/database.png?raw=true">
-                   </div>
-                    <h4>Unlimited Database</h4>
-                    <p>Lorem Ipsum is simply dummy and typesetting industry.</p>
-               </div>
-           </div>
-       </div>
-   </div>
-</section>
+						<div class="box">
+							<div class="ser-box">
+								<div class="icon">
+									<img
+										src="https://github.com/animationbro/our-service-css-hover-animation/blob/master/our%20service/img/protect.png?raw=true">
+								</div>
+								<h4>Privacy Protected</h4>
+								<p>Lorem Ipsum is simply dummy and typesetting industry.</p>
+							</div>
+						</div>
 
 
-<!-- <section class="testimonials-area testimonials-area-two pt-100">
+						<div class="box">
+							<div class="ser-box">
+								<div class="icon">
+									<img
+										src="https://github.com/animationbro/our-service-css-hover-animation/blob/master/our%20service/img/backup.png?raw=true">
+								</div>
+								<h4>Monthly Backup</h4>
+								<p>Lorem Ipsum is simply dummy and typesetting industry.</p>
+							</div>
+						</div>
+
+						<div class="box">
+							<div class="ser-box">
+								<div class="icon">
+									<img
+										src="https://github.com/animationbro/our-service-css-hover-animation/blob/master/our%20service/img/freessl.png?raw=true">
+								</div>
+								<h4>Free SSL Certificate</h4>
+								<p>Lorem Ipsum is simply dummy and typesetting industry.</p>
+							</div>
+						</div>
+
+						<div class="box">
+							<div class="ser-box">
+								<div class="icon">
+									<img
+										src="https://github.com/animationbro/our-service-css-hover-animation/blob/master/our%20service/img/database.png?raw=true">
+								</div>
+								<h4>Unlimited Database</h4>
+								<p>Lorem Ipsum is simply dummy and typesetting industry.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- <section class="testimonials-area testimonials-area-two pt-100">
 <div class="container">
 <div class="section-title">
 <span>Our Feedback</span>
@@ -2070,63 +2031,78 @@ Get a Quote
 </div>
 </div>
 </section> -->
-<section>
-<div class="testimonial-section">
-   <div class="inner-width">
-     <h1>What Our Clients Say</h1>
-     <div class="testimonial-pics">
-       <img src="p1.png" alt="test-1" class="active">
-       <img src="p2.png" alt="test-2">
-       <img src="p3.png" alt="test-3">
-       <img src="p4.png" alt="test-4">
-     </div>
+			<section>
+				<div class="testimonial-section">
+					<div class="inner-width">
+						<h1>What Our Clients Say</h1>
+						<div class="testimonial-pics">
+							<img src="p1.png" alt="test-1" class="active"> <img
+								src="p2.png" alt="test-2"> <img src="p3.png" alt="test-3">
+							<img src="p4.png" alt="test-4">
+						</div>
 
-     <div class="testimonial-contents">
-       <div class="testimonial active" id="test-1">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Ab consequatur et adipisci ut, impedit cumque, similique, eum tenetur, 
-            numquam eligendi aliquid. Nulla sit, cupiditate corporis labore,
-             modi natus officiis asperiores!
-             There is a multitude of different types of insurance policies available,
-              and virtually any individual or business can find an insurance company willing to insure them—for a price. The most common types of personal insurance policies are auto, health, homeowners, and life.
-               Most individuals in the United States have at least one of these types of insurance,
-             and car insurance is required by law.</p>
-         <!-- <span class="description">Emy / Developer</span> -->
-       </div>
+						<div class="testimonial-contents">
+							<div class="testimonial active" id="test-1">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Ab consequatur et adipisci ut, impedit cumque, similique, eum
+									tenetur, numquam eligendi aliquid. Nulla sit, cupiditate
+									corporis labore, modi natus officiis asperiores! There is a
+									multitude of different types of insurance policies available,
+									and virtually any individual or business can find an insurance
+									company willing to insure them—for a price. The most common
+									types of personal insurance policies are auto, health,
+									homeowners, and life. Most individuals in the United States
+									have at least one of these types of insurance, and car
+									insurance is required by law.</p>
+								<!-- <span class="description">Emy / Developer</span> -->
+							</div>
 
-       <div class="testimonial" id="test-2">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elimet, 
-            There is a multitude of different types of insurance policies available, and virtually any 
-            individual or business can find an insurance company willing to insure them—for a price. 
-            The most common types of personal insurance policies are auto, health, homeowners, and life. Most individuals in the United States have at least one of these types of insurance, and car 
-            insurance is required by law.consectetur adipisicing eli t. Ab consequatur et adipisci ut, 
-            impedit cumque, similique, eum tenetur, numquam eligendi aliquid. Nulla sit, cupiditate corporis labore, modi natus officiis asperiores!</p>
-         <span class="description">Carla / Developer</span>
-       </div>
+							<div class="testimonial" id="test-2">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+									elimet, There is a multitude of different types of insurance
+									policies available, and virtually any individual or business
+									can find an insurance company willing to insure them—for a
+									price. The most common types of personal insurance policies are
+									auto, health, homeowners, and life. Most individuals in the
+									United States have at least one of these types of insurance,
+									and car insurance is required by law.consectetur adipisicing
+									eli t. Ab consequatur et adipisci ut, impedit cumque,
+									similique, eum tenetur, numquam eligendi aliquid. Nulla sit,
+									cupiditate corporis labore, modi natus officiis asperiores!</p>
+								<span class="description">Carla / Developer</span>
+							</div>
 
-       <div class="testimonial" id="test-3">
-         <p>Lorem  similique, eum tenetur, numquam eligendi aliquid. Nulla sit,
-             There is a multitude of different types of insurance policies available, and virtually
-              any individual or business can find an insurance company willing to insure them—for a price. The most common types of personal insurance policies are auto, health, homeowners, and life. Most individuals in the United States have at least one of these types of insurance,
-               and car insurance is required by law.
-            cupiditate corporis labore, modi natus officiis asperiores!</p>
-         <span class="description">Thomas / Developer</span>
-       </div>
+							<div class="testimonial" id="test-3">
+								<p>Lorem similique, eum tenetur, numquam eligendi aliquid.
+									Nulla sit, There is a multitude of different types of insurance
+									policies available, and virtually any individual or business
+									can find an insurance company willing to insure them—for a
+									price. The most common types of personal insurance policies are
+									auto, health, homeowners, and life. Most individuals in the
+									United States have at least one of these types of insurance,
+									and car insurance is required by law. cupiditate corporis
+									labore, modi natus officiis asperiores!</p>
+								<span class="description">Thomas / Developer</span>
+							</div>
 
-       <div class="testimonial" id="test-4">
-         <p>Lorem ipsum dolorng elit. Ab consequatur et adipisci ut, 
-            There is a multitude of different types of insurance policies available,
-             and virtually any individual or business can find an insurance company willing to insure them—for a price. The most common types of personal insurance policies are auto, health, homeowners, 
-             and life. Most individuals in the United States have at least one of these types of insurance, and car insurance is required by law.\
-            impedit cumque, similique, eum tenetur, numquam eligendi aliquid. Nulla sit, 
-            cupiditate corporis labore, modi natus officiis asperiores!</p>
-         <span class="description">Monica / Developer</span>
-       </div>
-     </div>
-   </div>
- </div>
-</section>
-<!-- <section class="blog-area pt-100 pb-70">
+							<div class="testimonial" id="test-4">
+								<p>Lorem ipsum dolorng elit. Ab consequatur et adipisci ut,
+									There is a multitude of different types of insurance policies
+									available, and virtually any individual or business can find an
+									insurance company willing to insure them—for a price. The most
+									common types of personal insurance policies are auto, health,
+									homeowners, and life. Most individuals in the United States
+									have at least one of these types of insurance, and car
+									insurance is required by law.\ impedit cumque, similique, eum
+									tenetur, numquam eligendi aliquid. Nulla sit, cupiditate
+									corporis labore, modi natus officiis asperiores!</p>
+								<span class="description">Monica / Developer</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- <section class="blog-area pt-100 pb-70">
    <div class="container">
    <div class="section-title">
    <span>Our Blog</span>
@@ -2220,9 +2196,9 @@ Get a Quote
    </div>
    </div>
    </section> -->
-   
- 
-<!-- <section class="blog-area pt-100 pb-70">
+
+
+			<!-- <section class="blog-area pt-100 pb-70">
 <div class="container">
 <div class="section-title">
 <span>Our Blog</span>
@@ -2273,8 +2249,8 @@ Get a Quote
  -->
 
 
-<footer class="footer-area bg-color pt-100 pb-70">
-<!-- <div class="container">
+			<footer class="footer-area bg-color pt-100 pb-70">
+				<!-- <div class="container">
 <div class="row">
 <div class="col-lg-3 col-md-6">
 <div class="single-footer-widget single-bg">
@@ -2365,277 +2341,261 @@ Subscribe Now
 </div>
 </div>
 </div> -->
-<div class="container">
-    <div class="row">
-    <div class="col-lg-3 col-md-6">
-    <div class="single-footer-widget single-bg">
-    <a href="index-2.html" class="logo">
-    <img src="https://www.logolynx.com/images/logolynx/15/15d22fb10e0ed1be449a970551a0f434.jpeg" style="height: 50px;" alt="Image">
-    </a>
-    <p>An entity which provides insurance is known as an insurer, insurance company, insurance carrier or an underwriter.
-        ‎</p>
-    <ul class="social-icon">
-    <li>
-    <a href="#">
-    <i class="bx bxl-facebook"></i>
-    </a>
-    </li>
-    <li>
-    <a href="#">
-    <i class="bx bxl-instagram"></i>
-    </a>
-    </li>
-    <li>
-    <a href="#">
-    <i class="bx bxl-linkedin-square"></i>
-    </a>
-    </li>
-    <li>
-    <a href="#">
-    <i class="bx bxl-twitter"></i>
-    </a>
-    </li>
-    </ul>
-    </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
-    <div class="single-footer-widget">
-    <h3>Contact</h3>
-    <ul class="address">
-    <li>
-    <span>Phone:</span>
-    <a href="tel:+1-(514)-312-6677">+91 9000010100</a>
-    </li>
-    <li>
-    <span>Email:</span>
-    <a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#3c54595050537c4c594e4e45125f5351"><span class="__cf_email__" data-cfemail="3c54595050537c4c594e4e45125f5351">esurance@gmail.com</span></a>
-    </li>
-    <li class="location">
-    <span>Address:</span>
-    2364, kphp colony, Hyderabad.
-    </li>
-    </ul>
-    </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
-    <div class="single-footer-widget">
-    <h3>Services</h3>
-    <ul class="import-link">
-    <li>
-    <a href="#">Home Insurance</a>
-    </li>
-    <li>
-    <a href="#">Life Insurance</a>
-    </li>
-    <li>
-    <a href="#">Business Insurance</a>
-    </li>
-    <li>
-    <a href="#">Travel Insurance</a>
-    </li>
-    <!-- <li>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6">
+							<div class="single-footer-widget single-bg">
+								<a href="index-2.html" class="logo"> <img
+									src="https://www.logolynx.com/images/logolynx/15/15d22fb10e0ed1be449a970551a0f434.jpeg"
+									style="height: 50px;" alt="Image">
+								</a>
+								<p>An entity which provides insurance is known as an
+									insurer, insurance company, insurance carrier or an
+									underwriter. ‎</p>
+								<ul class="social-icon">
+									<li><a href="#"> <i class="bx bxl-facebook"></i>
+									</a></li>
+									<li><a href="#"> <i class="bx bxl-instagram"></i>
+									</a></li>
+									<li><a href="#"> <i class="bx bxl-linkedin-square"></i>
+									</a></li>
+									<li><a href="#"> <i class="bx bxl-twitter"></i>
+									</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="single-footer-widget">
+								<h3>Contact</h3>
+								<ul class="address">
+									<li><span>Phone:</span> <a href="tel:+1-(514)-312-6677">+91
+											9000010100</a></li>
+									<li><span>Email:</span> <a
+										href="https://templates.envytheme.com/cdn-cgi/l/email-protection#3c54595050537c4c594e4e45125f5351"><span
+											class="__cf_email__"
+											data-cfemail="3c54595050537c4c594e4e45125f5351">esurance@gmail.com</span></a>
+									</li>
+									<li class="location"><span>Address:</span> 2364, kphp
+										colony, Hyderabad.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="single-footer-widget">
+								<h3>Services</h3>
+								<ul class="import-link">
+									<li><a href="#">Home Insurance</a></li>
+									<li><a href="#">Life Insurance</a></li>
+									<li><a href="#">Business Insurance</a></li>
+									<li><a href="#">Travel Insurance</a></li>
+									<!-- <li>
     <a href="#">Auto Insurance</a>
     </li> -->
-    <li>
-    <a href="#">Property Insurance</a>
-    </li>
-    </ul>
-    </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
-    <div class="single-footer-widget">
-    <h3>Get in Touch</h3>
-    <p>Sign up to get new exclusive offers from our latest news.</p>
-    <form class="newsletter-form" data-toggle="validator">
-    <input type="email" class="form-control" placeholder="Enter email address" name="EMAIL" required autocomplete="off">
-    <button class="default-btn" type="submit">
-    Subscribe Now
-    </button>
-    <div id="validator-newsletter" class="form-result"></div>
-    </form>
-    </div>
-    </div>
-    </div>
-    </div>
-</footer>
+									<li><a href="#">Property Insurance</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="single-footer-widget">
+								<h3>Get in Touch</h3>
+								<p>Sign up to get new exclusive offers from our latest news.</p>
+								<form class="newsletter-form" data-toggle="validator">
+									<input type="email" class="form-control"
+										placeholder="Enter email address" name="EMAIL" required
+										autocomplete="off">
+									<button class="default-btn" type="submit">Subscribe
+										Now</button>
+									<div id="validator-newsletter" class="form-result"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
 
 
-<div class="copy-right-area bg-color">
-<div class="container">
-<p>
-Copyright &copy; 2021 epolicystore. Designed By
-<a href="https://envytheme.com/" target="_blank">EnvyTheme</a>
-</p>
-</div>
-</div>
+			<div class="copy-right-area bg-color">
+				<div class="container">
+					<p>
+						Copyright &copy; 2021 epolicystore. Designed By <a
+							href="https://envytheme.com/" target="_blank">EnvyTheme</a>
+					</p>
+				</div>
+			</div>
 
 
-<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered">
-<div class="modal-content">
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<i class="bx bx-x"></i>
-</button>
-<div class="modal-body">
-<div class="container">
-<div class="contact-form-action">
-<div class="account-title">
-<h2>Log In to Your Account</h2>
-</div>
-<form method="post">
-<div class="row">
-<div class="col-12">
-<div class="form-group">
-<label>Email or Phone</label>
-<input class="form-control" type="text" name="name">
-</div>
-</div>
-<div class="col-12">
-<div class="form-group">
-<label>Password</label>
-<input class="form-control" type="password" name="password">
-</div>
-</div>
-<div class="col-12">
-<div class="login-action">
-<span class="log-rem">
-<input id="remember" type="checkbox">
-<label for="remember">Remember me!</label>
-</span>
-<span class="forgot-login">
-<a href="recover-password.html">Forgot your password?</a>
-</span>
-</div>
-</div>
-<div class="col-12">
-<button class="default-btn" type="submit">
-Log In
-</button>
-</div>
-<div class="col-12">
-<p>Have an account? <a href="sign_up.html">Registration Now!</a></p>
-</div>
-</div>
-</form>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+			<div class="modal fade" id="staticBackdrop" data-backdrop="static"
+				data-keyboard="false" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<i class="bx bx-x"></i>
+						</button>
+						<div class="modal-body">
+							<div class="container">
+								<div class="contact-form-action">
+									<div class="account-title">
+										<h2>Log In to Your Account</h2>
+									</div>
+									<form method="post">
+										<div class="row">
+											<div class="col-12">
+												<div class="form-group">
+													<label>Email or Phone</label> <input class="form-control"
+														type="text" name="name">
+												</div>
+											</div>
+											<div class="col-12">
+												<div class="form-group">
+													<label>Password</label> <input class="form-control"
+														type="password" name="password">
+												</div>
+											</div>
+											<div class="col-12">
+												<div class="login-action">
+													<span class="log-rem"> <input id="remember"
+														type="checkbox"> <label for="remember">Remember
+															me!</label>
+													</span> <span class="forgot-login"> <a
+														href="recover-password.html">Forgot your password?</a>
+													</span>
+												</div>
+											</div>
+											<div class="col-12">
+												<button class="default-btn" type="submit">Log In</button>
+											</div>
+											<div class="col-12">
+												<p>
+													Have an account? <a href="sign_up.html">Registration
+														Now!</a>
+												</p>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 
-<div class="modal fade" id="staticBackdrop-2" data-backdrop="static" data-keyboard="false" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered">
-<div class="modal-content">
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<i class="bx bx-x"></i>
-</button>
-<div class="modal-body">
-<div class="container">
-<div class="contact-form-action">
-<div class="account-title">
-<h2>Register Your Account</h2>
-</div>
-<form method="post">
-<div class="row">
-<div class="col-12">
-<div class="form-group">
-<label>Full name</label>
-<input class="form-control" type="text" name="name">
-</div>
-</div>
-<div class="col-12">
-<div class="form-group">
-<label>Email address</label>
-<input class="form-control" type="email" name="email">
-</div>
-</div>
-<div class="col-12">
-<div class="form-group">
-<label>Mobile no.</label>
-<input class="form-control" type="text" name="Number">
-</div>
-</div>
-<div class="col-12">
-<div class="form-group">
-<label>Password</label>
-<input class="form-control" type="text" name="password">
-</div>
-</div>
-<div class="col-lg-12">
-<div class="show">
-<input id="remember-1" type="checkbox">
-<label>Show password ?</label>
-</div>
-</div>
-<div class="col-12">
-<button class="default-btn register" type="submit">
-Register Now
-</button>
-</div>
-<div class="col-12">
-<p>Have an account? <a href="sign_in.html">Login now!</a></p>
-</div>
-</div>
-</form>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+			<div class="modal fade" id="staticBackdrop-2" data-backdrop="static"
+				data-keyboard="false" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<i class="bx bx-x"></i>
+						</button>
+						<div class="modal-body">
+							<div class="container">
+								<div class="contact-form-action">
+									<div class="account-title">
+										<h2>Register Your Account</h2>
+									</div>
+									<form method="post">
+										<div class="row">
+											<div class="col-12">
+												<div class="form-group">
+													<label>Full name</label> <input class="form-control"
+														type="text" name="name">
+												</div>
+											</div>
+											<div class="col-12">
+												<div class="form-group">
+													<label>Email address</label> <input class="form-control"
+														type="email" name="email">
+												</div>
+											</div>
+											<div class="col-12">
+												<div class="form-group">
+													<label>Mobile no.</label> <input class="form-control"
+														type="text" name="Number">
+												</div>
+											</div>
+											<div class="col-12">
+												<div class="form-group">
+													<label>Password</label> <input class="form-control"
+														type="text" name="password">
+												</div>
+											</div>
+											<div class="col-lg-12">
+												<div class="show">
+													<input id="remember-1" type="checkbox"> <label>Show
+														password ?</label>
+												</div>
+											</div>
+											<div class="col-12">
+												<button class="default-btn register" type="submit">
+													Register Now</button>
+											</div>
+											<div class="col-12">
+												<p>
+													Have an account? <a href="sign_in.html">Login now!</a>
+												</p>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 
-<div class="go-top">
-<i class="bx bx-chevrons-up"></i>
-<i class="bx bx-chevrons-up"></i>
-</div>
+			<div class="go-top">
+				<i class="bx bx-chevrons-up"></i> <i class="bx bx-chevrons-up"></i>
+			</div>
 
 
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js"></script>
+			<script data-cfasync="false"
+				src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
 
-<script src="assets/js/popper.min.js"></script>
-<script type="text/javascript">
-   $('.testimonial-pics img').click(function(){
-     $(".testimonial-pics img").removeClass("active");
-     $(this).addClass("active");
+			<script src="assets/js/popper.min.js"></script>
+			<script type="text/javascript">
+				$('.testimonial-pics img').click(function() {
+					$(".testimonial-pics img").removeClass("active");
+					$(this).addClass("active");
 
-     $(".testimonial").removeClass("active");
-     $("#"+$(this).attr("alt")).addClass("active");
-   });
- </script>
+					$(".testimonial").removeClass("active");
+					$("#" + $(this).attr("alt")).addClass("active");
+				});
+			</script>
 
-<script src="assets/js/bootstrap.min.js"></script>
- 
-<script src="assets/js/meanmenu.min.js"></script>
+			<script src="assets/js/bootstrap.min.js"></script>
 
-<script src="assets/js/wow.min.js"></script>
+			<script src="assets/js/meanmenu.min.js"></script>
 
-<script src="assets/js/owl.carousel.min.js"></script>
+			<script src="assets/js/wow.min.js"></script>
 
-<script src="assets/js/carousel-thumbs.min.js"></script>
+			<script src="assets/js/owl.carousel.min.js"></script>
 
-<script src="assets/js/nice-select.min.js"></script>
+			<script src="assets/js/carousel-thumbs.min.js"></script>
 
-<script src="assets/js/magnific-popup.min.js"></script>
+			<script src="assets/js/nice-select.min.js"></script>
 
-<script src="assets/js/parallax.min.js"></script>
+			<script src="assets/js/magnific-popup.min.js"></script>
 
-<script src="assets/js/appear.min.js"></script>
+			<script src="assets/js/parallax.min.js"></script>
 
-<script src="assets/js/odometer.min.js"></script>
+			<script src="assets/js/appear.min.js"></script>
 
-<script src="assets/js/smoothscroll.min.js"></script>
+			<script src="assets/js/odometer.min.js"></script>
 
-<script src="assets/js/form-validator.min.js"></script>
+			<script src="assets/js/smoothscroll.min.js"></script>
 
-<script src="assets/js/contact-form-script.js"></script>
+			<script src="assets/js/form-validator.min.js"></script>
 
-<script src="assets/js/ajaxchimp.min.js"></script>
+			<script src="assets/js/contact-form-script.js"></script>
 
-<script src="assets/js/custom.js"></script>
-<script src="assets/js/signup.js"></script>
+			<script src="assets/js/ajaxchimp.min.js"></script>
+
+			<script src="assets/js/custom.js"></script>
+			<script src="assets/js/signup.js"></script>
 </body>
 
 <!-- Mirrored from templates.envytheme.com/perry/default/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Mar 2021 03:37:01 GMT -->

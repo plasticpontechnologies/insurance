@@ -2,9 +2,9 @@ package com.insurance.in.Insurance.model;
 
 public class User {
 
-	private String name;
+	private String user_name;
 	
-	private String phone;
+	private String phone_number;
 	
 	private String email;
 	
@@ -21,19 +21,20 @@ public class User {
 	}
 
 	public String getName() {
-		return name;
+		return user_name;
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		this.user_name = name;
+		
 	}
 
 	public String getPhone() {
-		return phone;
+		return phone_number;
 	}
 
 	public void setPhone(String phone) {
-		this.phone = phone;
+		this.phone_number = phone;
 	}
 
 	public String getEmail() {
