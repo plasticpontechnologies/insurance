@@ -10,6 +10,7 @@ import org.springframework.jdbc.core.support.JdbcDaoSupport;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.insurance.in.Insurance.model.CompletedSubmissions;
 import com.insurance.in.Insurance.model.DocumentRequest;
 import com.insurance.in.Insurance.model.Policies;
 
@@ -18,20 +19,29 @@ import com.insurance.in.Insurance.model.Policies;
 public class AgentDao extends JdbcDaoSupport {
 
 	@Autowired
-    public AgentDao(DataSource dataSource) {
-        this.setDataSource(dataSource);
-    }
-	
-public List<Policies> getAllDocumentData(){
-		
-	
-	
+	public AgentDao(DataSource dataSource) {
+		this.setDataSource(dataSource);
+	}
+
+	public List<Policies> getAllDocumentData() {
+
 		String sql = "select * from policies";
-		
-		List<Policies> documentList = this.getJdbcTemplate().query(sql, 
+
+		List<Policies> documentList = this.getJdbcTemplate().query(sql,
 				BeanPropertyRowMapper.newInstance(Policies.class));
-		
+
 		return documentList;
-		
+
+	}
+
+	public List<CompletedSubmissions> getCompletedSubmissions() {
+
+		String sql = "select * from completedsubmissions";
+
+		List<CompletedSubmissions> documentList = this.getJdbcTemplate().query(sql,
+				BeanPropertyRowMapper.newInstance(CompletedSubmissions.class));
+
+		return documentList;
+
 	}
 }

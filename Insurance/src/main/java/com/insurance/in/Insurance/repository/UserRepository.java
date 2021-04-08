@@ -2,12 +2,15 @@ package com.insurance.in.Insurance.repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
@@ -71,6 +74,27 @@ public class UserRepository {
 		}, saveUserRoleKeyHolder);
 		
 		return saveUserRoleKeyHolder.getKey().longValue();
+	}
+
+
+
+	public List<String> getNames() {
+		String sql="select user_name from user";
+		List<String> user=jdbcTemplate.query(sql, new RowMapper<String>() {
+
+			public String mapRow(ResultSet rs, int rowNum) throws SQLException {
+				//User userData= new User();
+				String name=rs.getString("user_name");
+				/*
+				 * userData.setPhone(rs.getString("phone_number"));
+				 * userData.setEmail(rs.getString("email"));
+				 * userData.setPassword(rs.getString("password"));
+				 */
+				return name;
+			}
+			
+		});
+		return user;
 	}
 	
 }

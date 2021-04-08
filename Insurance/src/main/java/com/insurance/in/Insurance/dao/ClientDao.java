@@ -13,6 +13,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.insurance.in.Insurance.model.BuyPolicy;
 import com.insurance.in.Insurance.model.DocumentRequest;
+import com.insurance.in.Insurance.model.Policies;
+import com.insurance.in.Insurance.model.User;
 
 @Repository
 @Transactional
@@ -47,4 +49,8 @@ public class ClientDao extends JdbcDaoSupport{
 							
 				});
 	}
+	
+	
+	
+
 }

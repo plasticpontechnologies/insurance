@@ -42,11 +42,11 @@ public class MainController {
 	 * return "loginPage"; }
 	 */
  
-    @RequestMapping(value = "/logoutSuccessful", method = RequestMethod.GET)
-    public String logoutSuccessfulPage(Model model) {
-        model.addAttribute("title", "Logout");
-        return "logoutSuccessfulPage";
-    }
+	/*
+	 * @RequestMapping(value = "/logoutSuccessful", method = RequestMethod.GET)
+	 * public String logoutSuccessfulPage(Model model) { model.addAttribute("title",
+	 * "Logout"); return "logoutSuccessfulPage"; }
+	 */
  
     @RequestMapping(value = "/userInfo", method = RequestMethod.GET)
     public String userInfo(Model model, Principal principal) {

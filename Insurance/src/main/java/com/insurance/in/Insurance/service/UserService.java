@@ -17,55 +17,61 @@ public class UserService {
 
 	@Autowired
 	private UserRepository userRepository;
-	
+
 	@Autowired
 	private ClientDao clientDao;
-	
+
 	@Autowired
 	private AppUserDAO appUserDao;
-	
+
 	int savedUniqueId = 0;
-	
+
 	public int saveUser(User user) {
 		int savedUser = userRepository.saveUser(user);
-		//savedUniqueId = savedUser;
-		updateUserApp(user,savedUser);
+		// savedUniqueId = savedUser;
+		updateUserApp(user, savedUser);
 		return savedUser;
 	}
-	
-	public Long updateUserApp(User user,int uniqueId) {
-		Long appUniqueId =(long) 0;
-		if(uniqueId >0) {
+
+	public Long updateUserApp(User user, int uniqueId) {
+		Long appUniqueId = (long) 0;
+		if (uniqueId > 0) {
 			String encodedPwd = getEncodedPassword(user.getPassword());
 			user.setPassword(encodedPwd);
 			user.setEnabled(true);
-			 appUniqueId=userRepository.saveUserAppDetails(user);		
+			appUniqueId = userRepository.saveUserAppDetails(user);
 		}
-		if(appUniqueId > 0) {
+		if (appUniqueId > 0) {
 			Long uniqueUserId = updateUserRole(appUniqueId);
 		}
 		return appUniqueId;
 	}
-	
+
 	public String getEncodedPassword(String pwd) {
-		return EncrytedPasswordUtils.encrytePassword(pwd); 		
+		return EncrytedPasswordUtils.encrytePassword(pwd);
 	}
-	
+
 	public Long updateUserRole(Long appUniqueId) {
-		int longValue =  appUniqueId.intValue();
+		int longValue = appUniqueId.intValue();
 		int roleId = 2;
 		Long uniqueUserId = userRepository.saveUserRole(longValue, roleId);
 		return uniqueUserId;
 	}
-	
-	public List<DocumentRequest> getAllDocumentData(){
+
+	public List<DocumentRequest> getAllDocumentData() {
 		List<DocumentRequest> documentList = clientDao.getAllDocumentData();
 		return documentList;
 	}
-	
+
 	public String getRoleByName(String name) {
 		String roleName = appUserDao.findRoleByName(name);
 		return roleName;
 	}
-	
+
+	public List<String> getAllNames() {
+		List<String> user = userRepository.getNames();
+		return user;
+
+	}
+
 }

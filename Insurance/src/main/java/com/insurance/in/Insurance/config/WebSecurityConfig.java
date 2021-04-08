@@ -8,6 +8,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import com.insurance.in.Insurance.service.UserDetailsServiceImpl;
 
@@ -16,56 +17,60 @@ import com.insurance.in.Insurance.service.UserDetailsServiceImpl;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Autowired
-    UserDetailsServiceImpl userDetailsService;
-	
+	UserDetailsServiceImpl userDetailsService;
+
 	@Bean
-    public BCryptPasswordEncoder passwordEncoder() {
-        BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
-        return bCryptPasswordEncoder;
-    }
-	
+	public BCryptPasswordEncoder passwordEncoder() {
+		BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
+		return bCryptPasswordEncoder;
+	}
+
 	@Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception { 
- 
-        // Setting Service to find User in the database.
-        // And Setting PassswordEncoder
-        auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());     
- 
-    }
-	
+	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
 
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
- 
-        http.csrf().disable();
- 
-        // The pages does not require login
-        http.authorizeRequests().antMatchers("/", "/login", "/logout").permitAll();
- 
-        // /userInfo page requires login as ROLE_USER or ROLE_ADMIN.
-        // If no login, it will redirect to /login page.
-        http.authorizeRequests().antMatchers("/userInfo").access("hasAnyRole('ROLE_USER', 'ROLE_ADMIN')");
- 
-        // For ADMIN only.
-        http.authorizeRequests().antMatchers("/admin").access("hasRole('ROLE_ADMIN')");
- 
-        // When the user has logged in as XX.
-        // But access a page that requires role YY,
-        // AccessDeniedException will be thrown.
-        http.authorizeRequests().and().exceptionHandling().accessDeniedPage("/403");
- 
-        // Config for Login Form
-        http.authorizeRequests().and().formLogin()//
-                // Submit URL of login page.
-                .loginProcessingUrl("/j_spring_security_check") // Submit URL
-                .loginPage("/login")//
-                .defaultSuccessUrl("/loginSuccess")//
-                .failureUrl("/login?error=true")//
-                .usernameParameter("username")//
-                .passwordParameter("password")
-                // Config for Logout Page
-                .and().logout().logoutUrl("/logout").logoutSuccessUrl("/logoutSuccessful");
- 
-    }
+		// Setting Service to find User in the database.
+		// And Setting PassswordEncoder
+		auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
+
+	}
+
+	@Override
+	protected void configure(HttpSecurity http) throws Exception {
+
+		http.csrf().disable();
+
+		// The pages does not require login
+		http.authorizeRequests().antMatchers("/", "/login", "/logout").permitAll();
+
+		// /userInfo page requires login as ROLE_USER or ROLE_ADMIN.
+		// If no login, it will redirect to /login page.
+		http.authorizeRequests().antMatchers("/userInfo").access("hasAnyRole('ROLE_USER', 'ROLE_ADMIN')");
+
+		// For ADMIN only.
+		http.authorizeRequests().antMatchers("/admin").access("hasRole('ROLE_ADMIN')");
+
+		// When the user has logged in as XX.
+		// But access a page that requires role YY,
+		// AccessDeniedException will be thrown.
+		http.authorizeRequests().and().exceptionHandling().accessDeniedPage("/403");
+
+		// Config for Login Form
+		http.authorizeRequests().and().formLogin()//
+				// Submit URL of login page.
+				.loginProcessingUrl("/j_spring_security_check") // Submit URL
+				.loginPage("/login")//
+				.defaultSuccessUrl("/loginSuccess")//
+				.failureUrl("/login?error=true")//
+				.usernameParameter("username")//
+				.passwordParameter("password")
+				// Config for Logout Page
+				// .and().logout().logoutUrl("/logout").logoutSuccessUrl("/logoutSuccessful");
+
+				
+
+				.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+				.logoutSuccessUrl("/logoutSuccessfulPage").invalidateHttpSession(true) // set invalidation state when
+																						// logout
+				.deleteCookies("JSESSIONID").and().exceptionHandling().accessDeniedPage("/login");
+	}
 }
-
